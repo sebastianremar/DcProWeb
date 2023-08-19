@@ -7,6 +7,7 @@ import Reviews from './pages/reviews/reviews';
 import Services from './pages/services/services';
 import Portada from './pages/portada/portada';
 
+// TODO: Ability to see all screens if scrolling down
 const App = () => {
   return (
     <Router>
@@ -14,10 +15,10 @@ const App = () => {
         <NavBar />
         <Routes>
           <Route path="/" element={<Portada />} />
+          <Route path="/services" element={<Services />} />
           <Route path="/about" element={<About />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/reviews" element={<Reviews />} />
-          <Route path="/services" element={<Services />} />
         </Routes>
       </div>
     </Router>

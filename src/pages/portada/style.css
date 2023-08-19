@@ -8,3 +8,48 @@
     width: 100%;
     display: block;
 }
+
+.book-now {
+    position: absolute;
+    width: 537px;
+    height: 337px;
+    left: 1050px;
+    top: 355px;
+    background: #97D700;
+    border-radius: 21px;
+}
+
+.book-now p {
+    position: absolute;
+    left: 39px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 58px;
+    line-height: 64px;
+    color: #FFFFFF;
+}
+
+.book-now .button-container button {
+    position: relative;
+    left: 39px;
+    top: 250px;
+    width: 221px;
+    height: 51px;
+    background-color: #307FE2;
+    transition: all 0.2s;
+    cursor: pointer;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 55px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 16px;
+    text-align: center;
+}
+
+.book-now .button-container button:hover {
+    font-weight: 800;
+  }
