@@ -9,7 +9,7 @@ const Portada: React.FC = () => {
       </div>
       <div className="book-now">
         <p>
-          Air Conduct & Dryer Vent Cleaning
+          Air Duct & Dryer Vent Cleaning
         </p>
         <div className="button-container">
           <button>

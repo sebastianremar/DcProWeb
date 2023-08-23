@@ -38,7 +38,7 @@ const NavBar: React.FC = () => {
             (703)-296-1979
           </div>
           <div className="book-now-letter">
-            BOOK BY PHONE
+            CALL NOW
           </div>
         </div>
         <div className="book-now-button">
