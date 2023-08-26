@@ -1,43 +1,41 @@
-/* TODO: Add each square its own space, so there's space before/after text.. it will look cleaner. 
-         Also fix the square of the title, it looks pretty bad and adjusting the height doesn't work. 
-*/
 .services-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100vh;
+    width: 100%;
 }
 
 .titulo {
     width: 100%;
     background-color: #307FE2;
     color: white;
-    padding: 20px;
+    padding: 50px 20px;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
-    font-size: 40px;
+    font-size: 50px;
     z-index: 1;
+    margin: 0;
 }
 
 .cleaning-container {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 80%;
+    width: 100%;
 }
 
 .text-and-title {
-    width: 50%;
+    flex: 0.5;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 4% 0;
 }
 
 .text-and-title h1 {
     font-family: 'Montserrat', sans-serif;
     font-size: 50px;
+    margin-bottom: 2%;
 }
 
 .text-and-title.duct h1 {
@@ -52,16 +50,17 @@
     width: 90%;
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
-    line-height: 1.6;
+    line-height: 2;
     color: #333333;
     text-align: center;
 }
 
 .cleaning-image {
-    width: 50%;
-    height: 100%;
+    flex: 0.5;
+    height: auto;
     background-size: cover;
     background-position: center;
+    padding: 20% 0;
 }
 
 .cleaning-image.duct {
@@ -70,5 +69,4 @@
 
 .cleaning-image.dryer {
     background-image: url('../../assets/images/hvac-technician-working-capacitor-part-condensing-unit.jpg');
-    background-position: center 29%; /* Adjust the vertical position */
 }
