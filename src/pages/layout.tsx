@@ -1,4 +1,3 @@
-// This will be the layout whenever the page is first loaded.
 import React from 'react';
 import Portada from '../pages/portada/portada';
 import Services from '../pages/services/services';

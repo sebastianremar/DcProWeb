@@ -3,6 +3,10 @@ body {
 }
 
 .navbar-container {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 2;
   display: block;
   flex-direction: row;
   align-content: center;
@@ -18,16 +22,10 @@ body {
   font-family: 'Montserrat', sans-serif;
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.32);
   min-height: 80px;
-  vertical-align: middle;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  align-content: center;
-}
-
-.nav-list {
-  display: inline-block;
 }
 
 .nav-list ul {
@@ -66,10 +64,6 @@ body {
   border-bottom: 2px solid #97D700;
   margin-bottom: -79px;
   border-radius: 0px 0px 10px 10px;
-}
-
-.book-now-button {
-  display: inline-block;
 }
 
 .book-now-button button {
@@ -134,5 +128,5 @@ body {
   width: 44px;
   height: 44px;
   font-size: 45px;
-  margin-top: 15px; /* Adjust the margin value to move it down */
+  margin-top: 15px;
 }

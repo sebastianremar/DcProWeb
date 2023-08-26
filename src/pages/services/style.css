@@ -1,3 +1,6 @@
+/* TODO: Add each square its own space, so there's space before/after text.. it will look cleaner. 
+         Also fix the square of the title, it looks pretty bad and adjusting the height doesn't work. 
+*/
 .services-container {
     display: flex;
     flex-direction: column;
