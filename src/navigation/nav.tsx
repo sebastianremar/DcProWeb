@@ -36,7 +36,6 @@ const NavBar: React.FC = () => {
             <li><Link to="/services">Services</Link></li>
             <li><Link to="/gallery">Gallery</Link></li>
             <li><Link to="/reviews">Reviews</Link></li>
-            <li><Link to="/reviews">Reviews</Link></li>
           </ul>
         </div>
         <div className="book-by-phone-container">
