@@ -1,6 +1,6 @@
 /* Portada.css */
 .portada {
-    background: url('../../assets/images/portada.png');
+    background: url('../../../assets/images/portada.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -13,7 +13,7 @@
     position: absolute;
     width: 537px;
     height: 337px;
-    left: 1050px;
+    left: 1550px;
     top: 355px;
     background: #97D700;
     border-radius: 21px;

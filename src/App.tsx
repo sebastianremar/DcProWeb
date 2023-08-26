@@ -1,11 +1,11 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import NavBar from './navigation/nav';
-import Layout from './pages/layout'; // Import the Layout component
-import About from './pages/about/about';
-import Gallery from './pages/gallery/gallery';
-import Reviews from './pages/reviews/reviews';
-import Services from './pages/services/services';
+import Layout from './pages/initial-screen/layout'; // Import the Layout component
+import About from './pages/individual-screens/about/about';
+import Gallery from './pages/individual-screens/gallery/gallery';
+import Reviews from './pages/individual-screens/reviews/reviews';
+import Services from './pages/individual-screens/services/services';
 
 const App: React.FC = () => {
   return (

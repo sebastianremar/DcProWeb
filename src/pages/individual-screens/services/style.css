@@ -55,6 +55,48 @@
     text-align: center;
 }
 
+.cleaning-text h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    color: #307FE2;
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+.cleaning-text p {
+    margin-bottom: 1rem;
+}
+
+.cleaning-text ul {
+    padding-left: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.cleaning-text ul li {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    line-height: 1.8;
+    color: #333333;
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: baseline;
+}
+
+.cleaning-text ul li .strong-content {
+    color: #97D700;
+    margin-right: 0.5rem; /* Spacing between the strong and normal text */
+    display: inline-flex; 
+    align-items: baseline;
+    min-width: 400px;
+    justify-content: flex-end;
+}
+
+.cleaning-text ul li .li-content {
+    display: inline-flex;
+    align-items: baseline;
+    text-align: left;
+}
+
 .cleaning-image {
     flex: 0.5;
     height: auto;
@@ -64,9 +106,9 @@
 }
 
 .cleaning-image.duct {
-    background-image: url('../../assets/images/medium-shot-people-wearing-helmets.jpg');
+    background-image: url('../../../assets/images/medium-shot-people-wearing-helmets.jpg');
 }
 
 .cleaning-image.dryer {
-    background-image: url('../../assets/images/hvac-technician-working-capacitor-part-condensing-unit.jpg');
+    background-image: url('../../../assets/images/hvac-technician-working-capacitor-part-condensing-unit.jpg');
 }
