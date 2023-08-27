@@ -1,0 +1,103 @@
+/* REVIEWS SECTION */
+.reviews-section {
+  text-align: center;
+  background-color: #f4f4f4;
+}
+
+.reviews-header {
+  font-size: 70px;
+  font-weight: 800;
+  margin-bottom: 30px;
+  padding: 25px 0;
+  margin-top: 0;  
+  color: #307FE2;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+  letter-spacing: 1.5px;
+  position: relative;
+  background-color: #DCDCDC ; 
+}
+
+.reviews-header span {
+  background: linear-gradient(90deg, #307FE2, #1f5bb8);
+  -webkit-background-clip: text;
+  color: transparent;
+  padding: 5px 10px;  
+  border-radius: 5px; 
+}
+
+.reviews-header:hover::after {
+  animation: slideIn 0.3s forwards;
+}
+
+.reviews-header::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  height: 3px;
+  width: 0;
+  background: #1f5bb8;
+  transition: width 0.3s;
+}
+
+/* REVIEWS CONTAINER */
+.reviews-container {
+  column-count: 3;
+  column-gap: 20px;
+  width: 100%;
+  padding: 20px 10%;
+  box-sizing: border-box;
+}
+
+/* REVIEW CARD */
+.review-card {
+  background: linear-gradient(145deg, #e6e6e6, #ffffff);
+  box-shadow: 5px 5px 15px #aaaaaa, -5px -5px 15px #ffffff;
+  border-radius: 21px;
+  margin: 20px 0;
+  break-inside: avoid;  /* This prevents the card from splitting between columns */
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%; /* This ensures the card takes up the full width of the column */
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.review-card:hover {
+  transform: scale(1.05);
+  box-shadow: 8px 8px 15px #aaaaaa, -8px -8px 15px #ffffff;
+}
+
+.stars {
+  display: flex;
+  gap: 4px;
+  margin: 10px 0; 
+}
+
+.star {
+  font-size: 18px;
+  color: #ccc;
+}
+
+.star.filled {
+  color: #ffb400;
+}
+
+.author {
+  font-weight: bold;
+  margin-top: 8px;
+}
+
+.body {
+  margin: 12px 0;
+  color: #333;
+}
+
+.time-ago {
+  color: #888;
+  font-size: 12px;
+}
