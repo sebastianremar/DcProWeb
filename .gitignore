@@ -20,6 +20,12 @@
 
 npm-debug.log*
 
+# images
+/src/client/assets
 *.png
 *.web
 *.jpg
+
+# data
+*.json
+.env
