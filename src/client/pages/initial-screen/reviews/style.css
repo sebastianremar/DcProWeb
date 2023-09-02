@@ -1,0 +1,124 @@
+/* Main container for the reviews */
+.portada-reviews-homepage-container {
+    padding: 0 10%;  /* Increased padding for larger height */
+    padding-bottom: 15%;
+    background-color: #151515;
+}
+
+/* Base style for review card */
+.portada-review-card-homepage {
+    width: 90%;
+    height: 250px;  
+    overflow: hidden; 
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0 auto;  /* Center the card in the carousel slide */
+    
+}
+
+.portada-review-card-homepage:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+}
+
+/* Three different color themes for each card */
+.portada-review-card-homepage:nth-child(1) {
+    background-color: #272727;
+    color: #ffffff;
+}
+
+.portada-review-card-homepage:nth-child(2) {
+    background-color: #1f1f1f;
+    color: #dcdcdc;
+}
+
+.portada-review-card-homepage:nth-child(3) {
+    background-color: #161616;
+    color: #bdbdbd;
+}
+
+/* Review content styles */
+.portada-stars {
+    display: flex;
+    gap: 4px;
+    margin: 10px 0; 
+}
+
+.portada-star {
+    font-size: 18px;
+    color: #ccc;
+}
+
+.portada-star.filled {
+    color: #ffb400;
+}
+
+.portada-author {
+    font-weight: bold;
+    margin-top: 8px;
+    font-size: 20px;
+}
+
+.portada-body {
+    color: inherit;
+    line-height: 1.8;
+    font-size: 16px;
+}
+
+.portada-time-ago {
+    color: #888;
+    font-size: 12px;
+}
+
+/* SLIDER */
+.slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.portada-review-read-more {
+    display: inline-block;
+    margin-top: 8px;
+    text-decoration: underline;
+    font-weight: bold;
+    cursor: pointer;
+    color: inherit;
+}
+
+.portada-review-header {
+    font-size: 60px;
+    font-weight: 800;
+    padding: 75px 0;
+    color: #307FE2;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+    letter-spacing: 1.5px;
+    position: relative;
+    background-color: #307FE2; /* Slightly lighter than the services header for a unique touch */
+    border-radius: 8px; /* Rounded edges for softness */
+
+    /* Gradient for the text, transitioning between two shades of blue */
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(45deg, #97D700, #307FE2);
+}
+
+.portada-review-header::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    height: 4px;
+    width: 0;
+    background: #307FE2;
+    transition: width 0.3s;
+}
+
+.portada-review-header:hover::after {
+    animation: slideIn 0.3s forwards;
+}
