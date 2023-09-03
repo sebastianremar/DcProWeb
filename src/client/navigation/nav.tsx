@@ -42,11 +42,13 @@ const NavBar: React.FC = () => {
           <div className="phone-icon">
             <PhoneIcon />
           </div>
-          <div className="phone-number">
-            (703)-296-1979
-          </div>
-          <div className="book-now-letter">
-            CALL NOW
+          <div className="book-number-letter-container">
+            <div className="phone-number">
+              (703)-296-1979
+            </div>
+            <div className="book-now-letter">
+              CALL NOW
+            </div>
           </div>
         </div>
         <div className="book-now-button">

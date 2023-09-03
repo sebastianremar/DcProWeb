@@ -1,55 +1,91 @@
-/* Portada.css */
-.portada {
-    background: url('../../../assets/images/portada.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100vh;
-    width: 100%;
-    display: block;
+/* ------ GLOBAL STYLES ------ */
+
+body, html {
+    font-family: 'Montserrat', sans-serif;
 }
+
+/* ------ PORTADA SECTION ------ */
+
+.portada {
+    background: url('../../../assets/images/portada.png') center/cover no-repeat;
+    height: calc(100vh - 114px);
+    width: 100%;
+}
+
+/* ------ BOOK NOW SECTION ------ */
 
 .book-now {
     position: absolute;
-    width: 537px;
-    height: 337px;
-    left: 1550px;
-    top: 355px;
+    width: 477px;
+    left: 58%;
+    top: 44%;
     background: #97D700;
     border-radius: 21px;
+    padding: 27px 38px;
+    box-sizing: border-box;
 }
 
 .book-now p {
-    position: absolute;
-    left: 39px;
-    font-family: 'Montserrat';
-    font-style: normal;
     font-weight: 800;
     font-size: 58px;
     line-height: 64px;
     color: #FFFFFF;
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+
+.button-container {
+    display: block;
+    position: relative;
 }
 
 .book-now .button-container button {
-    position: relative;
-    left: 39px;
-    top: 250px;
     width: 221px;
     height: 51px;
     background-color: #307FE2;
-    transition: all 0.2s;
+    transition: background-color 0.2s;
     cursor: pointer;
     color: white;
     border: none;
     padding: 10px 20px;
     border-radius: 55px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
-    font-style: normal;
+    font-weight: 600;
     font-size: 16px;
     text-align: center;
 }
 
 .book-now .button-container button:hover {
     font-weight: 800;
-  }
+    background-color: #2b71c8;
+}
+
+/* ------ NAVBAR STYLES ------ */
+
+nav.navbar {
+    padding: 10px 4%;
+}
+
+.nav-list {
+    margin-left: 52px;
+    display: inline-block !important;
+}
+
+.nav-list ul {
+    margin: unset;
+}
+
+.nav-list ul li {
+    font-size: 18px;
+}
+
+.book-by-phone-container {
+    margin-left: auto;
+}
+
+.book-by-phone-container .phone-icon {
+    font-size: 32px;
+}
+
+.book-by-phone-container .phone-number {
+    font-size: 23px;
+}

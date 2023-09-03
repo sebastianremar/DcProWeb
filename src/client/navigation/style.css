@@ -2,6 +2,7 @@ body {
   margin: 0px;
 }
 
+/* Navbar Styles */
 .navbar-container {
   position: -webkit-sticky;
   position: sticky;
@@ -28,17 +29,27 @@ body {
   align-items: center;
 }
 
+nav.navbar {
+  padding: 10px 4%;
+}
+
+/* Nav List Styles */
+.nav-list {
+  margin-left: 52px;
+  display: inline-block !important;
+}
+
 .nav-list ul {
   list-style: none;
   display: flex;
-  justify-content: right;
   padding: 0;
   margin: 0 4%;
+  justify-content: right;
 }
 
 .nav-list ul li {
+  font-size: 18px;
   margin: 0 15px;
-  font-size: 22px;
 }
 
 .nav-list ul li a {
@@ -52,6 +63,7 @@ body {
   color: #97D700;
 }
 
+/* Logo Styles */
 .logo {
   display: inline-block;
   z-index: 2;
@@ -66,7 +78,8 @@ body {
   border-radius: 0px 0px 10px 10px;
 }
 
-.book-now-button button {
+/* Book Now Button Styles */
+.book-now-button button, .book-now .button-container button {
   background-color: #307FE2;
   transition: all 0.2s;
   cursor: pointer;
@@ -82,10 +95,11 @@ body {
   text-align: center;
 }
 
-.book-now-button button:hover {
+.book-now-button button:hover, .book-now .button-container button:hover {
   background-color: #97D700;
 }
 
+/* Book By Phone Container Styles */
 .book-by-phone-container {
   display: flex;
   flex-direction: row;
@@ -95,38 +109,80 @@ body {
   align-content: center;
   padding: 0px;
   row-gap: 0px;
-
   width: 275px;
   height: 62px;
 }
 
+.book-by-phone-container .phone-icon {
+  font-size: 32px;
+}
+
 .book-by-phone-container .phone-number {
-  width: 80%;
-  height: 27px;
-  font-family: 'Montserrat';
-  font-style: normal;
+  width: 100%;
   font-weight: 800;
-  font-size: 25px;
+  font-size: 23px;
   text-align: center;
   color: #97D700;
 }
 
 .book-by-phone-container .book-now-letter {
-  width: 140px;
-  height: 18px;
-  font-family: 'Montserrat';
-  font-style: normal;
+  width: 150px;
   font-weight: 800;
   font-size: 15px;
   line-height: 30px;
   color: #97D700;
-  margin-left: 25px;
-
 }
 
-.book-by-phone-container .phone-icon {
-  width: 44px;
-  height: 44px;
-  font-size: 45px;
-  margin-top: 15px;
+/* Portada Styles */
+.portada {
+  height: calc(100vh - 114px);
+}
+
+/* Book Now Container Styles */
+.book-now {
+  left: 58%;
+  top: 44%;
+  padding: 27px 38px;
+  box-sizing: border-box;
+  width: 477px;
+}
+
+.book-now .button-container button {
+  font-weight: 600;
+}
+
+.book-now .button-container button:hover {
+  font-weight: 600;
+  background-color: #2b71c8;
+}
+
+/* Book Number and Letter Container Styles */
+.book-number-letter-container {
+  display: flex;
+  flex-direction: column;   
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 70px;
+}
+
+.phone-icon {
+  display: flex;
+  align-items: center;
+  font-size: 32px;
+}
+
+.phone-number {
+  font-size: 23px;
+  font-weight: 800;
+  text-align: center;
+  color: #97D700;
+}
+
+.book-now-letter {
+  font-weight: 800;
+  font-size: 15px;
+  line-height: 30px;
+  text-align: center;
+  color: #97D700;
 }

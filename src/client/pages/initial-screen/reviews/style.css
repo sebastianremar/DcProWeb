@@ -1,21 +1,64 @@
 /* Main container for the reviews */
 .portada-reviews-homepage-container {
-    padding: 0 10%;  /* Increased padding for larger height */
-    padding-bottom: 15%;
+    padding: 92px 15px 92px 15px;
+    position: relative;
+    background: url(https://www.ambientedge.com/wp-content/uploads/2022/07/air-conditioning-repair-company-in-summerlin-nv.jpg) center/cover no-repeat;
     background-color: #151515;
 }
 
-/* Base style for review card */
+.portada-reviews-homepage-container:after {
+    content: "";
+    display: block;
+    background: #307fe2db;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+}
+
+/* Review Header */
+.portada-review-header {
+    font-size: 60px;
+    font-weight: 800;
+    padding: 75px 0;
+    color: #307FE2;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+    letter-spacing: 1.5px;
+    position: relative;
+    background-color: #307FE2;
+    border-radius: 8px;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(45deg, #97D700, #307FE2);
+}
+
+h1.portada-review-header {
+    margin-top: 0;
+    padding: 0;
+    text-align: center;
+    z-index: 1;
+    color: #fff;
+    font-size: 42px;
+}
+
+.portada-review-header:hover::after {
+    animation: slideIn 0.3s forwards;
+}
+
+/* Review Card */
 .portada-review-card-homepage {
-    width: 90%;
+    width: 80%;
     height: 250px;  
     overflow: hidden; 
-    padding: 20px;
+    padding: 25px 35px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     font-family: 'Montserrat', sans-serif;
-    margin: 0 auto;  /* Center the card in the carousel slide */
+    margin: 10px auto;
     
 }
 
@@ -24,10 +67,10 @@
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
 }
 
-/* Three different color themes for each card */
+/* Different color themes */
 .portada-review-card-homepage:nth-child(1) {
-    background-color: #272727;
-    color: #ffffff;
+    background-color: #fff;
+    color: #000;
 }
 
 .portada-review-card-homepage:nth-child(2) {
@@ -40,7 +83,8 @@
     color: #bdbdbd;
 }
 
-/* Review content styles */
+/* ------ REVIEW CONTENT STYLES ------ */
+
 .portada-stars {
     display: flex;
     gap: 4px;
@@ -68,19 +112,6 @@
     font-size: 16px;
 }
 
-.portada-time-ago {
-    color: #888;
-    font-size: 12px;
-}
-
-/* SLIDER */
-.slide {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-}
-
 .portada-review-read-more {
     display: inline-block;
     margin-top: 8px;
@@ -90,35 +121,28 @@
     color: inherit;
 }
 
-.portada-review-header {
-    font-size: 60px;
-    font-weight: 800;
-    padding: 75px 0;
-    color: #307FE2;
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
-    letter-spacing: 1.5px;
-    position: relative;
-    background-color: #307FE2; /* Slightly lighter than the services header for a unique touch */
-    border-radius: 8px; /* Rounded edges for softness */
-
-    /* Gradient for the text, transitioning between two shades of blue */
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    background-image: linear-gradient(45deg, #97D700, #307FE2);
+.portada-time-ago {
+    color: #888;
+    font-size: 12px;
 }
 
-.portada-review-header::after {
-    content: '';
-    position: absolute;
-    bottom: -5px;
-    left: 0;
-    height: 4px;
-    width: 0;
-    background: #307FE2;
-    transition: width 0.3s;
+/* ------ SLIDER ------ */
+
+.slick-slider {
+    max-width: 1350px;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 1;
 }
 
-.portada-review-header:hover::after {
-    animation: slideIn 0.3s forwards;
+.slick-prev:before, .slick-next:before {
+    font-size: 35px;
+}
+
+.slick-next {
+    right: -30px;
+}
+
+.slick-prev {
+    left: -40px;
 }
