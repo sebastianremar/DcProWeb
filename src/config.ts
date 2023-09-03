@@ -4,4 +4,5 @@ export interface Review {
     author: string;
     reviewBody: string | null;
     dateCreated: string;
+    url?: string;
 }

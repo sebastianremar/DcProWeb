@@ -2,7 +2,7 @@ import React from 'react';
 import { Review } from '../../../../config';
 import './style.css';
 
-const ReviewCard: React.FC<Review> = ({ reviewRating, author, reviewBody, dateCreated }) => {
+const ReviewCard: React.FC<Review> = ({ reviewRating, author, reviewBody, dateCreated, url }) => {
     const parsedRating = Math.round(parseFloat(reviewRating));
     return (
         <div className="review-card">
@@ -12,10 +12,14 @@ const ReviewCard: React.FC<Review> = ({ reviewRating, author, reviewBody, dateCr
                     <span key={i} className={i < parsedRating ? 'star filled' : 'star'}>★</span>
                 ))}
             </div>
-            <div className="body">{reviewBody}</div>
+            <div className="body">
+                {reviewBody}
+                {url && <a href={url} className="review-link">Read More</a>}
+            </div>
             <div className="time-ago">{dateCreated}</div>
         </div>
     );
 }
+
 
 export default ReviewCard;

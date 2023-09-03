@@ -38,7 +38,7 @@ const PortadaReviews: React.FC = () => {
                             </div>
                             <div className="portada-body">
                               {truncateText(review.reviewBody)}
-                              {review.reviewBody && review.reviewBody.length > 150 && <a href="YOUR_URL_HERE" className="portada-review-read-more">Read More</a>}
+                              {review.reviewBody && review.reviewBody.length > 150 && review.url && <a href={review.url} className="portada-review-read-more">Read More</a>}
                             </div>
                             <div className="portada-time-ago">{review.dateCreated}</div>
                         </div>
