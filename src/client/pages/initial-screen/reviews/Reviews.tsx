@@ -5,19 +5,19 @@ import { Review } from '../../../../config';
 import importedReviews from '../../individual-screens/reviews/Reviews.json';
 import './style.css';
 
-const PortadaReviews: React.FC = () => {
+const ReviewsPortada: React.FC = () => {
     const reviews: Review[] = importedReviews.slice(0,9);
 
     const settings = {
         dots: false,
-        infinite: true,  // This ensures the looping behavior
+        infinite: true, 
         speed: 500,
-        slidesToShow: 3,  // Display three reviews at once
-        slidesToScroll: 3  // Move three reviews on arrow click
+        slidesToShow: 3, 
+        slidesToScroll: 3  
     };
 
     const truncateText = (text: string | null, maxLength: number = 150) => {
-        if (!text) return "";  // Handles null or undefined
+        if (!text) return "";  
         if (text.length <= maxLength) return text;
         return text.substr(0, maxLength) + "...";
     }
@@ -49,4 +49,4 @@ const PortadaReviews: React.FC = () => {
     );
 }
 
-export default PortadaReviews;
+export default ReviewsPortada;

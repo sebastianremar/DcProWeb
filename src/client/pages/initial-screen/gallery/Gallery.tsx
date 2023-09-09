@@ -33,7 +33,7 @@ const GalleryInitial: React.FC = () => {
                     showFullscreenButton={false}
                     showPlayButton={false}
                     thumbnailPosition="bottom"
-                    showNav={false}
+                    showNav={true}
                 />
             </div>
         </div>

@@ -1,18 +1,17 @@
 import React from 'react';
-import PortadaInitial from './portada/Portada';
+import Portada from './portada/Portada';
 import ServicesPortada from './services/services';
 import About from '../individual-screens/about/about';
 import GalleryInitial from './gallery/Gallery';
-import PortadaReviews from '../initial-screen/reviews/Reviews';
+import ReviewsPortada from '../initial-screen/reviews/Reviews';
 
 const Layout: React.FC = () => {
   return (
     <div>
-      <PortadaInitial />
+      <Portada />
       <ServicesPortada />
-      <PortadaReviews />
+      <ReviewsPortada />
       <GalleryInitial />
-      <About />
     </div>
   );
 }

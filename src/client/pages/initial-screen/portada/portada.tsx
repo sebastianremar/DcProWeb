@@ -1,8 +1,8 @@
 import React from "react";
-import './style.css'; // Import your custom CSS file
+import './style.css';
 
 
-const PortadaInitial: React.FC = () => {
+const Portada: React.FC = () => {
   return (
     <div className="container-portada">
       <div className="portada">
@@ -21,4 +21,4 @@ const PortadaInitial: React.FC = () => {
   );
 }
 
-export default PortadaInitial;
+export default Portada;
