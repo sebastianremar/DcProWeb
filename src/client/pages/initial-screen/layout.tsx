@@ -1,9 +1,9 @@
 import React from 'react';
 import Portada from './portada/Portada';
 import ServicesPortada from './services/services';
-import About from '../individual-screens/about/about';
 import GalleryInitial from './gallery/Gallery';
 import ReviewsPortada from '../initial-screen/reviews/Reviews';
+import Footer from '../../components/footer';
 
 const Layout: React.FC = () => {
   return (
@@ -12,6 +12,7 @@ const Layout: React.FC = () => {
       <ServicesPortada />
       <ReviewsPortada />
       <GalleryInitial />
+      <Footer />
     </div>
   );
 }

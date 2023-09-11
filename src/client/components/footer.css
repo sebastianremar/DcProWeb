@@ -1,0 +1,71 @@
+.footer {
+    display: flex;
+    justify-content: center;
+    background-color: #307FE2;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    color: #fff;
+}
+
+.footer-column {
+    width: 25%;
+    margin: 0 10px;
+    transition: all 0.3s ease;
+}
+
+.footer-column h2 {
+    color: #97D700;
+    text-transform: uppercase; 
+}
+
+.footer-column ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 12px;
+}
+
+.footer-column ul li a.link {
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.3s ease; 
+}
+
+.footer-column ul li a.link:hover, 
+.footer-column ul li a.link:active {
+    color: #97D700;
+    font-weight: 800;
+    transform: scale(1.05); 
+}
+
+.footer-column ul.social-links li {
+    display: flex;
+    align-items: center;
+}
+
+.footer-column ul.social-links li a {
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.footer-column ul.social-links li a svg {
+    margin-right: 8px;
+    transition: all 0.3s ease; 
+}
+
+.footer-column ul.social-links li a:hover, 
+.footer-column ul.social-links li a:active {
+    color: #97D700; 
+    font-weight: 800;
+}
+
+.footer-column ul.social-links li a:hover svg, 
+.footer-column ul.social-links li a:active svg {
+    fill: #97D700;
+    transform: scale(1.05) rotate(15deg); 
+}
