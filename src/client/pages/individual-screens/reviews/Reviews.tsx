@@ -3,10 +3,11 @@ import { Review } from "../../../../config";
 import './style.css';
 import ReviewCard from "./ReviewCard";
 import importedReviews from './Reviews.json';
+import CustomButton from '../../../components/CustomButton';
 
 const ReviewsIndividual: React.FC = () => {
   const reviews: Review[] = importedReviews;
-  
+
   const [numToShow, setNumToShow] = useState(10);
 
   const handleSeeMore = () => {
@@ -20,22 +21,27 @@ const ReviewsIndividual: React.FC = () => {
   return (
     <div className="reviews-section">
       <h2 className="reviews-header"><span>Our Customers Love Us!</span></h2>
-      <div className="reviews-container">
-        {reviews.slice(0, numToShow).map((review, index) => (
-          <ReviewCard
-            key={index}
-            author={review.author}
-            reviewRating={review.reviewRating}
-            reviewBody={review.reviewBody}
-            dateCreated={review.dateCreated}
-          />
-        ))}
+      <div className='reviews-button-container'>
+        <div className="reviews-container">
+          {reviews.slice(0, numToShow).map((review, index) => (
+            <ReviewCard
+              key={index}
+              author={review.author}
+              reviewRating={review.reviewRating}
+              reviewBody={review.reviewBody}
+              dateCreated={review.dateCreated}
+            />
+          ))}
+        </div>
+        {numToShow < reviews.length && (
+          <div className='button-container'>
+            <CustomButton
+              text={numToShow === 10 ? "READ MORE" : "READ ALL REVIEWS"}
+              onClick={handleSeeMore}
+            />
+          </div>
+        )}
       </div>
-      {numToShow < reviews.length && (
-        <button onClick={handleSeeMore} className="show-more-button">
-          {numToShow === 10 ? "READ MORE" : "READ ALL REVIEWS"}
-        </button>
-      )}
     </div>
   );
 }
