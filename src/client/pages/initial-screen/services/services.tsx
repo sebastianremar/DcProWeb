@@ -1,4 +1,5 @@
 import React from "react";
+import CustomButton from "../../../components/CustomButton";
 import './style.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheck, faWind, faTshirt } from '@fortawesome/free-solid-svg-icons';
@@ -9,9 +10,14 @@ const ServicesPortada: React.FC = () => {
             <div className="services-portada-container">
                 <div className="service-cards-desc">
                     <h2 className="services-header">Our Services</h2>
-                    <p className="services-header-text">Lorem ipsum dolor sit amet consectetur adipiscing elit laoreet, netus class condimentum
-                        facilisi luctus sociosqu parturient. Vestibulum convallis mattis scelerisque</p><a href="/services"
-                            className="learn-more-btn">View more</a>
+                    <p className="services-header-text">
+                        Revitalize your space with Duct Clean Pro! 🌟
+                        <br /><br />
+                        Don't let dirt dictate your air quality. Experience the professional difference as we sweep away the grime, leaving a breath of fresh air in your home or office. Say goodbye to allergens and hello to a cleaner, healthier living.
+                        <br /><br />
+                        <strong>Duct Clean Pro</strong>: Breathing Freshness into Your Life.
+                    </p>
+                    <CustomButton text="View more" />
                 </div>
                 <div className="service-cards-wrapper">
                     <div className="service-card">
