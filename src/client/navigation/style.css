@@ -1,69 +1,46 @@
 body {
-  margin: 0px;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
 }
 
-/* Navbar Styles */
 .navbar-container {
-  position: -webkit-sticky;
   position: sticky;
   top: 0;
   z-index: 2;
-  display: block;
-  flex-direction: row;
-  align-content: center;
-  flex: 0 0 100%;
-  justify-content: space-around;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
+  flex: 0 0 100%;
 }
 
 .navbar {
   background-color: #FFFFFF;
   padding: 10px 0;
   border-bottom: 4px solid #307FE2;
-  font-family: 'Montserrat', sans-serif;
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.32);
   min-height: 80px;
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 
 nav.navbar {
   padding: 10px 4%;
-}
-
-/* Nav List Styles */
-.nav-list {
-  margin-left: 52px;
-  display: inline-block !important;
-}
-
-.nav-list ul {
-  list-style: none;
   display: flex;
-  padding: 0;
-  margin: 0 4%;
-  justify-content: right;
+  justify-content: space-between;
+  width: 100%;
 }
 
-.nav-list ul li {
-  font-size: 18px;
-  margin: 0 15px;
+.left-container {
+  display: flex;
+  align-items: center;
 }
 
-.nav-list ul li a {
-  text-decoration: none;
-  color: black;
-  font-weight: lighter;
-  transition: color 0.3s;
+.right-container {
+  display: flex;
+  align-items: center;
 }
 
-.nav-list ul li a:hover {
-  color: #97D700;
-}
-
-/* Logo Styles */
 .logo {
   display: inline-block;
   z-index: 2;
@@ -78,111 +55,64 @@ nav.navbar {
   border-radius: 0px 0px 10px 10px;
 }
 
-/* Book Now Button Styles */
-.book-now-button button, .book-now .button-container button {
-  background-color: #307FE2;
-  transition: all 0.2s;
-  cursor: pointer;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 55px;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 500;
-  font-style: normal;
-  font-size: 16px;
-  line-height: 36px;
-  text-align: center;
+.nav-list {
+  margin-left: 52px;
+  display: flex;
 }
 
-.book-now-button button:hover, .book-now .button-container button:hover {
-  background-color: #97D700;
+.nav-list ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0 4%;
 }
 
-/* Book By Phone Container Styles */
+.nav-list ul li {
+  font-size: 18px;
+  margin: 0 15px;
+}
+
+.nav-list ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 300;
+  transition: color 0.3s;
+}
+
+.nav-list ul li a:hover {
+  color: #97D700;
+}
+
 .book-by-phone-container {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  align-content: center;
-  padding: 0px;
-  row-gap: 0px;
+  padding: 0;
+  gap: 0;
   width: 275px;
   height: 62px;
 }
 
-.book-by-phone-container .phone-icon {
+.phone-icon {
   font-size: 32px;
+  display: flex;
+  align-items: center;
 }
 
-.book-by-phone-container .phone-number {
-  width: 100%;
+.phone-number, .book-now-letter {
   font-weight: 800;
-  font-size: 23px;
   text-align: center;
   color: #97D700;
-}
-
-.book-by-phone-container .book-now-letter {
-  width: 150px;
-  font-weight: 800;
-  font-size: 15px;
-  line-height: 30px;
-  color: #97D700;
-}
-
-/* Portada Styles */
-.portada {
-  height: calc(100vh - 114px);
-}
-
-/* Book Now Container Styles */
-.book-now {
-  left: 58%;
-  top: 44%;
-  padding: 27px 38px;
-  box-sizing: border-box;
-  width: 477px;
-}
-
-.book-now .button-container button {
-  font-weight: 600;
-}
-
-.book-now .button-container button:hover {
-  font-weight: 600;
-  background-color: #2b71c8;
-}
-
-/* Book Number and Letter Container Styles */
-.book-number-letter-container {
-  display: flex;
-  flex-direction: column;   
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  min-height: 70px;
-}
-
-.phone-icon {
-  display: flex;
-  align-items: center;
-  font-size: 32px;
 }
 
 .phone-number {
+  width: 100%;
   font-size: 23px;
-  font-weight: 800;
-  text-align: center;
-  color: #97D700;
 }
 
 .book-now-letter {
-  font-weight: 800;
+  width: 150px;
   font-size: 15px;
   line-height: 30px;
-  text-align: center;
-  color: #97D700;
 }
