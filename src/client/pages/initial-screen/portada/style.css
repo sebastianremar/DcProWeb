@@ -14,78 +14,52 @@ body, html {
 
 /* ------ BOOK NOW SECTION ------ */
 
-.book-now {
+.book-now-portada {
     position: absolute;
     width: 477px;
-    left: 58%;
+    left: 60%;
     top: 44%;
-    background: #97D700;
+    background: #307FE2;
     border-radius: 21px;
-    padding: 27px 38px;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
 }
 
-.book-now p {
+.book-now-portada p {
     font-weight: 800;
     font-size: 58px;
     line-height: 64px;
     color: #FFFFFF;
-    margin-bottom: 20px;
-    margin-top: 0;
+    margin: 0 0 20px 0;
+    text-align: center; 
 }
 
-.button-container {
+.button-container-portada {
     display: block;
     position: relative;
 }
 
-.book-now .button-container button {
-    width: 221px;
-    height: 51px;
-    background-color: #307FE2;
-    transition: background-color 0.2s;
+.button-container-portada button {
+    background-color: #ffff;
+    transition: 0.2s;
     cursor: pointer;
-    color: white;
+    color: #000000;
     border: none;
     padding: 10px 20px;
     border-radius: 55px;
-    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
     font-size: 16px;
+    line-height: 36px;
     text-align: center;
+    width: 130px;
+    margin-bottom: 30px;
 }
-
-.book-now .button-container button:hover {
-    font-weight: 800;
-    background-color: #2b71c8;
-}
-
-/* ------ NAVBAR STYLES ------ */
-
-nav.navbar {
-    padding: 10px 4%;
-}
-
-.nav-list {
-    margin-left: 52px;
-    display: inline-block !important;
-}
-
-.nav-list ul {
-    margin: unset;
-}
-
-.nav-list ul li {
-    font-size: 18px;
-}
-
-.book-by-phone-container {
-    margin-left: auto;
-}
-
-.book-by-phone-container .phone-icon {
-    font-size: 32px;
-}
-
-.book-by-phone-container .phone-number {
-    font-size: 23px;
+  
+.button-container-portada button:hover {
+    background-color: #97D700;
 }
