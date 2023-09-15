@@ -17,7 +17,7 @@ const ServicesPortada: React.FC = () => {
                         <br /><br />
                         <strong>Duct Clean Pro</strong>: Breathing Freshness into Your Life.
                     </p>
-                    <CustomButton text="View more" />
+                    <CustomButton text="View more" className="view-more-button-desktop" />
                 </div>
                 <div className="service-cards-wrapper">
                     <div className="service-card">
@@ -60,6 +60,7 @@ const ServicesPortada: React.FC = () => {
                         </div>
                     </div>
                 </div>
+                <CustomButton text="View more" className="view-more-button-mobile" />
             </div>
         </div>
     );

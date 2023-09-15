@@ -1,6 +1,9 @@
 /* GLOBAL STYLES */
 body, html {
     font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    background-color: #f4f4f4; 
+    box-sizing: border-box; 
 }
 
 @keyframes slideIn {
@@ -16,8 +19,9 @@ body, html {
 .services-section {
     text-align: center;
     background-color: #f4f4f4;
-    border-top: 5px solid #6B6E70;
     padding: 62px 15px 72px 15px;
+    max-width: 1200px; 
+    margin: 0 auto; 
 }
 
 .services-header {
@@ -41,7 +45,6 @@ body, html {
     border-radius: 5px;
 }
 
-/* HEADER ANIMATIONS */
 .services-header:hover::after {
     animation: slideIn 0.3s forwards;
 }
@@ -57,64 +60,65 @@ body, html {
     transition: width 0.3s;
 }
 
-/* SERVICES PORTADA CONTAINER */
 .services-portada-container {
     display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap; 
     justify-content: space-between;
-    align-items: stretch;
+    align-items: flex-start;
     width: 100%;
     max-width: 1200px;
-    margin: 0 5%;
+    margin: 0 auto;
     gap: 28px;
 }
 
 .service-cards-desc {
-    flex: 1.5; 
-    min-width: 450px; 
+    flex: 1; 
+    min-width: 300px;
+    max-width: 300px; 
     text-align: left;
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 20px;
-    margin: 0% 10%; 
+    margin: 0; 
 }
 
 .service-cards-wrapper {
-    flex: 1; 
+    flex: 2; 
+    height: 50vh;
     display: flex;
-    flex-direction: row;  
+    flex-direction: row;
+    flex-wrap: nowrap; 
     justify-content: flex-start;
-    align-items: center;
+    align-items: center; 
     gap: 28px;
-    width: 100%; 
-    margin-left: 5%;
+    width: 100%;
+    padding: 0 5%;
 }
 
-/* SERVICE CARDS STYLING */
 .service-card {
-    background: #007ce3d4;
+    background: #007ce3d4; 
     box-shadow: 5px 5px 15px #aaaaaa, -5px -5px 15px #ffffff;
-    border-radius: 21px;
-    flex: 1;
-    padding: 30px 60px;
+    border-radius: 21px; 
+    padding: 15px 30px; 
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    position: relative;
-    max-width: 35%; 
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin-left: 2%; 
+    flex: 1 0 calc(33.333% - 56px); 
+    max-width: calc(33.333% - 56px);
+    min-width: 350px; 
+    box-sizing: border-box;
+    margin: 0 2% 20px 2%; 
 }
+
 
 .service-card:hover {
     transform: scale(1.05);
     box-shadow: 8px 8px 15px #aaaaaa, -8px -8px 15px #ffffff;
 }
 
-/* SERVICE CARD TITLES AND DESCRIPTIONS */
 .service-title {
-    font-size: 32px;
-    font-weight: 800;
+    font-size: 28px;
+    font-weight: 700;
     white-space: nowrap;
     padding-bottom: 10px;
     max-width: 400px;
@@ -136,7 +140,6 @@ body, html {
     margin: 0;
 }
 
-/* INFO LINE STYLES */
 .info-line {
     display: flex;
     align-items: center;
@@ -154,8 +157,84 @@ body, html {
     margin-right: 10px;
 }
 
-/* GENERAL TEXT STYLES */
 .services-header-text, .description-text {
     line-height: 1.6;
     font-size: 18px;
 }
+
+.view-more-button-desktop {
+    display: block; 
+}
+
+.view-more-button-mobile {
+    display: none; 
+}
+
+@media (max-width: 1250px) {
+    .service-cards-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-card {
+        flex: 1 0 auto; 
+        max-width: 350px; 
+        min-width: 350px; 
+        margin-bottom: 20px; 
+    }
+}
+
+@media (max-width: 900px) {
+    .service-cards-desc .services-header-text,
+    .service-cards-desc .CustomButton {
+        display: none;
+    }
+
+    .services-portada-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-cards-wrapper {
+        flex: 1;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-card {
+        flex: 1 1 100%; 
+        max-width: 350px;
+        min-width: 350px; 
+        margin-bottom: 20px;
+    }
+
+    .services-header {
+        margin-bottom: 20px;
+        text-align: center; 
+    }
+
+    .view-more-button-desktop {
+        display: none; 
+    }
+
+    .view-more-button-mobile {
+        display: block; 
+    }
+}
+
+@media (max-width: 600px) {
+    .services-portada-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-card {
+        flex: none; 
+        width: 90%; 
+        max-width: 350px; 
+        min-width: 100px; 
+        margin: 10px 0;
+        box-sizing: border-box;
+    }
+}
+
