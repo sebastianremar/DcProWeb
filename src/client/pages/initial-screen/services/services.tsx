@@ -26,15 +26,15 @@ const ServicesPortada: React.FC = () => {
                             <div className="description-text">
                                 <div className="info-line">
                                     <FontAwesomeIcon className="checkmark" icon={faCheck} color="#97D700" />
-                                    <span className="info-text">Comprehensive Cleaning</span>
+                                    <span className="info-text">Targeted Debris Removal</span>
                                 </div>
                                 <div className="info-line">
                                     <FontAwesomeIcon className="checkmark" icon={faCheck} color="#97D700" />
-                                    <span className="info-text">Advanced Techniques</span>
+                                    <span className="info-text">Detailed Cleaning Procedure</span>
                                 </div>
                                 <div className="info-line">
                                     <FontAwesomeIcon className="checkmark" icon={faCheck} color="#97D700" />
-                                    <span className="info-text">Improved Air Quality</span>
+                                    <span className="info-text">Less Dust in your Home</span>
                                 </div>
                             </div>
                         </div>
@@ -45,15 +45,15 @@ const ServicesPortada: React.FC = () => {
                             <div className="description-text">
                                 <div className="info-line">
                                     <FontAwesomeIcon className="checkmark" icon={faCheck} color="#97D700" />
-                                    <span className="info-text">Maintenance Concerns</span>
+                                    <span className="info-text">Fire Prevention</span>
                                 </div>
                                 <div className="info-line">
                                     <FontAwesomeIcon className="checkmark" icon={faCheck} color="#97D700" />
-                                    <span className="info-text">Safety and Efficiency</span>
+                                    <span className="info-text">Improve Air Quaility</span>
                                 </div>
                                 <div className="info-line">
                                     <FontAwesomeIcon className="checkmark" icon={faCheck} color="#97D700" />
-                                    <span className="info-text">Comprehensive Solution</span>
+                                    <span className="info-text">Increase Dryer Efficiency</span>
                                 </div>
                             </div>
 
