@@ -63,3 +63,40 @@ body, html {
 .button-container-portada button:hover {
     background-color: #97D700;
 }
+
+@media (max-width: 1250px) {
+    .book-now-portada {
+        left: 60%; 
+        top: 64%; 
+        transform: translateX(-50%); 
+    }
+}
+
+@media (max-width: 1000px) {
+
+    .book-now-portada {
+        width: 350px;
+    }
+
+    .book-now-portada p {
+        font-size: 38px;
+        line-height: 44px;
+
+    }
+}
+
+@media (max-width: 500px) {
+    .book-now-portada {
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 90%; 
+        background: rgba(48, 127, 226, 0.8); 
+        padding: 15px;
+    }
+
+    .book-now-portada p {
+        font-size: 38px;
+        line-height: 54px;
+    }
+}
