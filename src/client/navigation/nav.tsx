@@ -8,20 +8,6 @@ import './style.css';
 const NavBar: React.FC = () => {
   const [scrolled, setScrolled] = useState(false);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const isScrolled = window.scrollY > 25;
-      if (isScrolled !== scrolled) {
-        setScrolled(isScrolled);
-      }
-    };
-
-    document.addEventListener("scroll", handleScroll);
-    return () => {
-      document.removeEventListener("scroll", handleScroll);
-    };
-  }, [scrolled]);
-
   return (
     <div className="navbar-container">
       <nav className="navbar">
@@ -29,7 +15,7 @@ const NavBar: React.FC = () => {
           <div className="logo">
             <img src={logo} alt="Logo" />
           </div>
-          <div className="nav-list" style={{ display: scrolled ? 'none' : 'flex' }}>
+          <div className="nav-list">
             <ul>
               <li><Link to="/about">About</Link></li>
               <li><Link to="/services">Services</Link></li>
@@ -52,9 +38,9 @@ const NavBar: React.FC = () => {
               </div>
             </div>
           </div>
-          <div className="book-now-button">
+          {/* <div className="book-now-button">
             <CustomButton text="Book Now"/>
-          </div>
+          </div> */}
         </div>
       </nav>
     </div>
