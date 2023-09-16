@@ -241,3 +241,10 @@ body, html {
     }
 }
 
+@media (max-width: 401px) {
+    .services-header {
+        font-size: 40px;
+    }
+    
+}
+
