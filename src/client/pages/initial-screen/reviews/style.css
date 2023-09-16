@@ -147,6 +147,42 @@ h1.portada-review-header {
     left: -40px;
 }
 
+/* ------ BUTTON ------- */
+.button-container-review {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin-top: 30px;
+}
+
+.button-container-review a {
+    text-decoration: none; 
+    display: inline-block; 
+    z-index: 3;
+}
+
+.button-container-review button {
+    background-color: #ffff;
+    transition: 0.2s;
+    cursor: pointer;
+    color: #000000;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 55px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 36px;
+    text-align: center;
+    width: 130px;
+    justify-content: center;
+    display: block; 
+}
+  
+.button-container-review button:hover {
+    background-color: #97D700;
+}
+
 @media (max-width: 1480px) {
     .portada-review-card-homepage {
         width: calc(66% - 20px); 
@@ -171,5 +207,15 @@ h1.portada-review-header {
 
     .slick-prev {
         left: 16%; 
+    }
+}
+
+@media (max-width: 401px) {
+    .slick-next {
+        right: 10%; 
+    }
+
+    .slick-prev {
+        left: 6%; 
     }
 }

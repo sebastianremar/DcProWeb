@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Review } from "../../../../config";
 import './style.css';
 import ReviewCard from "./ReviewCard";
@@ -17,6 +17,10 @@ const ReviewsIndividual: React.FC = () => {
       setNumToShow(reviews.length);
     }
   };
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <div className="reviews-section">

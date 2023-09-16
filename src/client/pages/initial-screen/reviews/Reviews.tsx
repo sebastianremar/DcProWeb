@@ -1,13 +1,14 @@
 import { useState, useEffect } from 'react';
-import Slider from "react-slick";  
-import "slick-carousel/slick/slick.css"; 
-import "slick-carousel/slick/slick-theme.css"; 
+import Slider from "react-slick";
 import { Review } from '../../../../config';
 import importedReviews from '../../individual-screens/reviews/Reviews.json';
+import { Link } from 'react-router-dom';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import './style.css';
 
 const ReviewsPortada: React.FC = () => {
-    const reviews: Review[] = importedReviews.slice(0,9);
+    const reviews: Review[] = importedReviews.slice(0, 9);
 
     const [cardWidth, setCardWidth] = useState('calc(33.33% - 30px)');
     const [sliderSettings, setSliderSettings] = useState({
@@ -18,14 +19,22 @@ const ReviewsPortada: React.FC = () => {
         slidesToScroll: 3
     });
 
-    const truncateText = (text: string | null, maxLength: number = 150) => {
-        if (!text) return "";  
+    const [maxLength, setMaxLength] = useState(150);
+
+    const truncateText = (text: string | null) => {
+        if (!text) return "";
         if (text.length <= maxLength) return text;
         return text.substr(0, maxLength) + "...";
     }
 
     useEffect(() => {
         const updateSliderSettings = () => {
+            if (window.innerWidth <= 425) {
+                setMaxLength(40);
+            } else {
+                setMaxLength(150);
+            }
+
             if (window.innerWidth <= 980) {
                 setSliderSettings(prev => ({ ...prev, slidesToShow: 1, slidesToScroll: 1 }));
                 setCardWidth('100%');
@@ -37,21 +46,21 @@ const ReviewsPortada: React.FC = () => {
                 setCardWidth('calc(33.33% - 30px)');
             }
         };
-    
+
         window.addEventListener('resize', updateSliderSettings);
-        updateSliderSettings(); 
-    
+        updateSliderSettings();
+
         return () => {
             window.removeEventListener('resize', updateSliderSettings);
         };
     }, []);
 
-      return (
+    return (
         <div className="portada-reviews-homepage-container">
             <h1 className="portada-review-header">OUR CUSTOMERS LOVE US</h1>
             <Slider {...sliderSettings}>
                 {reviews.map((review, index) => (
-                    <div key={index} className="slide">
+                    <div key={index} className="slide" style={{ width: cardWidth }}>
                         <div className="portada-review-card-homepage">
                             <div className="portada-author">{review.author}</div>
                             <div className="portada-stars">
@@ -60,14 +69,19 @@ const ReviewsPortada: React.FC = () => {
                                 ))}
                             </div>
                             <div className="portada-body">
-                              {truncateText(review.reviewBody)}
-                              {review.reviewBody && review.reviewBody.length > 150 && review.url && <a href={review.url} className="portada-review-read-more">Read More</a>}
+                                {truncateText(review.reviewBody)}
+                                {review.reviewBody && review.reviewBody.length > maxLength && review.url && <a href={review.url} className="portada-review-read-more">Read More</a>}
                             </div>
                             <div className="portada-time-ago">{review.dateCreated}</div>
                         </div>
                     </div>
                 ))}
             </Slider>
+            <div className="button-container-review">
+                <Link to="/reviews">
+                    <button>See More</button>
+                </Link>
+            </div>
         </div>
     );
 }
