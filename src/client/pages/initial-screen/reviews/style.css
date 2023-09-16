@@ -146,3 +146,30 @@ h1.portada-review-header {
 .slick-prev {
     left: -40px;
 }
+
+@media (max-width: 1480px) {
+    .portada-review-card-homepage {
+        width: calc(66% - 20px); 
+    }
+
+    .slick-next {
+        right: 3%; 
+    }
+
+    .slick-prev {
+        left: 2%; 
+    }
+}
+
+@media (max-width: 980px) {
+    .portada-review-card-homepage {
+        width: calc(50% - 20px); 
+    }
+    .slick-next {
+        right: 18%; 
+    }
+
+    .slick-prev {
+        left: 16%; 
+    }
+}
