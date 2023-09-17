@@ -1,114 +1,171 @@
-.services-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
+.services-section-individual {
+    background-color: #f4f4f4;
+    color: #333333;
+    padding: 20px;
 }
 
-.titulo {
-    width: 100%;
-    background-color: #307FE2;
-    color: white;
-    padding: 50px 20px;
-    text-align: center;
+.services-flex-container-individual {
+    display: flex;
+}
+
+.services-flex-container-reverse-individual {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.services-flex-text-individual {
+    flex: 0.55;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    font-size: 50px;
-    z-index: 1;
-    margin: 0;
+    color: #333;
 }
 
-.cleaning-container {
-    display: flex;
-    width: 100%;
+.services-flex-text-individual p {
+    line-height: 1.8;
+    padding: 0px 5%;
+    font-size: 25px;
 }
 
-.text-and-title {
-    flex: 0.5;
+.services-flex-image-individual {
+    flex: 0.45;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 4% 0;
 }
 
-.text-and-title h1 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 50px;
-    margin-bottom: 2%;
-}
-
-.text-and-title.duct h1 {
-    color: #97D700;
-}
-
-.text-and-title.dryer h1 {
+.services-flex-container-individual h1 {
+    font-size: 40px;
     color: #307FE2;
-}
-
-.cleaning-text {
-    width: 90%;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 20px;
-    line-height: 2;
-    color: #333333;
+    margin: unset;
+    margin-top: 50px;
     text-align: center;
 }
 
-.cleaning-text h2 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 24px;
+.services-flex-container-reverse-individual h1 {
+    font-size: 40px;
     color: #307FE2;
-    margin-bottom: 1rem;
-    text-align: left;
+    margin: unset;
+    margin-top: 20px;
+    text-align: center;
 }
 
-.cleaning-text p {
-    margin-bottom: 1rem;
+.services-section-individual img {
+    width: 100%;
+    border-radius: 10px;
 }
 
-.cleaning-text ul {
-    padding-left: 1.5rem;
-    margin-bottom: 1rem;
+.services-section-individual ul li {
+    font-weight: bold; 
+    margin-bottom: 8px; 
+    color: #307FE2;
 }
 
-.cleaning-text ul li {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 20px;
-    line-height: 1.8;
-    color: #333333;
-    margin-bottom: 0.5rem;
-    display: flex;
-    align-items: baseline;
-}
-
-.cleaning-text ul li .strong-content {
+.services-section-individual ul li::before {
+    font-weight: 800; 
+    display: inline-block; 
+    width: 1em; 
     color: #97D700;
-    margin-right: 0.5rem; /* Spacing between the strong and normal text */
-    display: inline-flex; 
-    align-items: baseline;
-    min-width: 400px;
-    justify-content: flex-end;
 }
 
-.cleaning-text ul li .li-content {
-    display: inline-flex;
-    align-items: baseline;
-    text-align: left;
+.button-container-services-individual {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto; 
 }
 
-.cleaning-image {
-    flex: 0.5;
-    height: auto;
-    background-size: cover;
-    background-position: center;
-    padding: 20% 0;
+@media(min-width: 320px) {
+    .services-flex-container-individual, 
+    .services-flex-container-reverse-individual {
+        flex-direction: column;
+    }
+
+    .services-flex-text-individual h1 {
+        font-size: 28px;
+    }
+
+    .services-flex-text-individual p {
+        font-size: 13px;
+    }
 }
 
-.cleaning-image.duct {
-    background-image: url('../../../assets/images/medium-shot-people-wearing-helmets.jpg');
+@media(min-width: 480px) {
+    .services-flex-container-individual, 
+    .services-flex-container-reverse-individual {
+        flex-direction: column;
+    }
+
+    .services-flex-text-individual h1 {
+        font-size: 28px;
+    }
+    .services-flex-text-individual p {
+        font-size: 13px;
+    }
 }
 
-.cleaning-image.dryer {
-    background-image: url('../../../assets/images/hvac-technician-working-capacitor-part-condensing-unit.jpg');
+@media(min-width: 600px) {
+    .services-flex-text-individual h1 {
+        font-size: 32px;
+    }
+
+    .services-flex-text-individual p {
+        font-size: 16px;
+    }
+}
+
+@media(min-width: 768px) {
+    .services-flex-text-individual h1 {
+        font-size: 35px;
+    }
+    .services-flex-text-individual p {
+        font-size: 18px;
+    }
+
+    .button-container-services-individual button {
+        width: 130px;
+        font-size: 15px;
+        border-radius: 24px;
+        padding: 8px 16px;
+        line-height: 21px;
+    }
+}
+
+@media(min-width: 1024px) {
+    .services-flex-container-individual, 
+    .services-flex-container-reverse-individual {
+        flex-direction: column;
+    }
+
+    .services-flex-text-individual p {
+        font-size: 25px;
+    }
+}
+
+@media(min-width: 1280px) {
+    .services-flex-container-individual, 
+    .services-flex-container-reverse-individual {
+        flex-direction: row;
+    }
+
+    .services-flex-text-individual h1 {
+        font-size: 40px;
+    }
+
+    .services-flex-container-individual {
+        display: flex;
+    }
+    
+    .services-flex-container-reverse-individual {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .services-flex-text-individual p {
+        font-size: 22px;
+    }
+}
+
+@media(min-width: 2000px) {
+    .services-flex-text-individual p {
+        font-size: 25px;
+    }
 }

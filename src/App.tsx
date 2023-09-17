@@ -6,19 +6,23 @@ import About from './client/pages/individual-screens/about/about';
 import GalleryInitial from './client/pages/initial-screen/gallery/Gallery';
 import Reviews from './client/pages/individual-screens/reviews/Reviews';
 import Services from './client/pages/individual-screens/services/services';
+import Footer from './client/components/footer';
 
 const App: React.FC = () => {
   return (
     <Router>
-      <div>
-        <NavBar />
-        <Routes>
-          <Route path="/" element={<Layout />} />
-          <Route path="/services" element={<Services />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/gallery" element={<GalleryInitial />} />
-          <Route path="/reviews" element={<Reviews />} />
-        </Routes>
+      <div className="app-container">
+        <div className="main-content">
+          <NavBar />
+          <Routes>
+            <Route path="/" element={<Layout />} />
+            <Route path="/services" element={<Services />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/gallery" element={<GalleryInitial />} />
+            <Route path="/reviews" element={<Reviews />} />
+          </Routes>
+        </div>
+        <Footer/>
       </div>
     </Router>
   );

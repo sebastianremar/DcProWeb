@@ -40,7 +40,7 @@ const ReviewsIndividual: React.FC = () => {
         {numToShow < reviews.length && (
           <div className='button-container'>
             <CustomButton
-              text={numToShow === 10 ? "READ MORE" : "READ ALL REVIEWS"}
+              text={numToShow === 10 ? "See More" : "See all"}
               onClick={handleSeeMore}
             />
           </div>

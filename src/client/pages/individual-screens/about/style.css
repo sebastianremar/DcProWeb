@@ -1,0 +1,240 @@
+.about-section {
+    background-color: #f4f4f4;
+    color: #333333;
+    padding: 20px;
+}
+
+.flex-container {
+    display: flex;
+}
+
+.flex-container-reverse {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.flex-text {
+    flex: 0.55;
+}
+
+.flex-text p {
+    line-height: 1.8;
+    padding: 0px 5%;
+    font-size: 25px;
+}
+
+.flex-image {
+    flex: 0.45;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-container h1 {
+    font-size: 40px;
+    color: #307FE2;
+    margin: unset;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.flex-container-reverse h1 {
+    font-size: 40px;
+    color: #307FE2;
+    margin: unset;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.about-section img {
+    width: 100%;
+    border-radius: 10px;
+}
+.about-section ul li {
+    font-weight: bold; 
+    margin-bottom: 8px; 
+    color: #307FE2;
+}
+
+.about-section ul li::before {
+    font-weight: 800; 
+    display: inline-block; 
+    width: 1em; 
+    color: #97D700;
+}
+
+.button-container-about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto; 
+}
+
+.button-container-about button {
+    background-color: #307FE2;
+    transition: 0.2s;
+    cursor: pointer;
+    color: #ffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 28px; 
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 24px; 
+    text-align: center;
+    width: 150px; 
+    display: block; 
+    margin: 0 auto; 
+}
+  
+.button-container-about button:hover {
+    background-color: #97D700; 
+}
+
+@media(min-width: 320px) {
+    .flex-container, 
+    .flex-container-reverse {
+        flex-direction: column;
+    }
+
+    .flex-container h1, 
+    .flex-container-reverse h1 {
+        font-size: 22px;
+    }
+    .flex-text p {
+        font-size: 13px;
+    }
+
+    .button-container-about button {
+        width: 100px;
+        font-size: 12px;
+        border-radius: 20px;
+        padding: 6px 12px;
+        line-height: 18px;
+        margin-bottom: 20px;
+    }
+}
+
+@media(min-width: 480px) {
+    .flex-container, 
+    .flex-container-reverse {
+        flex-direction: column;
+    }
+
+    .flex-container h1, 
+    .flex-container-reverse h1 {
+        font-size: 22px;
+    }
+    .flex-text p {
+        font-size: 13px;
+    }
+
+    .button-container-about button {
+        width: 100px;
+        font-size: 12px;
+        border-radius: 20px;
+        padding: 6px 12px;
+        line-height: 18px;
+        margin-bottom: 20px;
+    }
+}
+
+@media(min-width: 600px) {
+    .flex-container, 
+    .flex-container-reverse {
+        flex-direction: column;
+    }
+
+    .flex-container h1, 
+    .flex-container-reverse h1 {
+        font-size: 22px;
+    }
+
+    .flex-text p {
+        font-size: 16px;
+    }
+
+    .button-container-about button {
+        width: 100px;
+        font-size: 12px;
+        border-radius: 20px;
+        padding: 6px 12px;
+        line-height: 18px;
+    }
+}
+
+@media(min-width: 768px) {
+    .flex-container h1, 
+    .flex-container-reverse h1 {
+        font-size: 25px;
+    }
+    .flex-text p {
+        font-size: 18px;
+    }
+
+    .button-container-about button {
+        width: 130px;
+        font-size: 15px;
+        border-radius: 24px;
+        padding: 8px 16px;
+        line-height: 21px;
+    }
+}
+
+@media(min-width: 1024px) {
+    .flex-container, 
+    .flex-container-reverse {
+        flex-direction: row;
+    }
+
+    .flex-container {
+        display: flex;
+    }
+    .flex-container-reverse {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    
+    .flex-text p {
+        font-size: 14px;
+    }
+}
+
+@media(min-width: 1280px) {
+    .flex-container {
+        display: flex;
+    }
+    .flex-container-reverse {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .flex-text p {
+        font-size: 22px;
+    }
+
+    .button-container-about button {
+        width: 150px; 
+        font-size: 16px;
+        border-radius: 28px; 
+        padding: 10px 20px;
+        line-height: 24px; 
+    }
+}
+
+@media(min-width: 2000px) {
+    .flex-container {
+        display: flex;
+    }
+    .flex-container-reverse {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .flex-text p {
+        font-size: 25px;
+    }
+}
+
+
