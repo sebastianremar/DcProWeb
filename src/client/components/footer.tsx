@@ -26,9 +26,9 @@ const Footer: React.FC = () => {
             <div className="footer-column">
                 <h2>Follow Us</h2>
                 <ul className="social-links">
-                    <li><a href="https://www.facebook.com/" target="_blank" rel="noreferrer"><FaFacebook /> Facebook</a></li>
-                    <li><a href="https://www.instagram.com/" target="_blank" rel="noreferrer"><FaInstagram /> Instagram</a></li>
-                    <li><a href="https://www.yelp.com/" target="_blank" rel="noreferrer"><FaYelp /> Yelp</a></li>
+                    <li><a href="https://www.facebook.com/profile.php?id=100029105573482" target="_blank" rel="noreferrer"><FaFacebook /> Facebook</a></li>
+                    <li><a href="https://www.instagram.com/duct_clean_pro/" target="_blank" rel="noreferrer"><FaInstagram /> Instagram</a></li>
+                    <li><a href="https://www.yelp.com/biz/duct-clean-pro-mclean?override_cta=Request+a+Quote" target="_blank" rel="noreferrer"><FaYelp /> Yelp</a></li>
                 </ul>
             </div>
         </footer>
