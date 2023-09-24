@@ -145,6 +145,7 @@ h1.portada-review-header {
 
 .slick-prev {
     left: -40px;
+    z-index: 2;
 }
 
 /* ------ BUTTON ------- */
@@ -210,12 +211,39 @@ h1.portada-review-header {
     }
 }
 
-@media (max-width: 401px) {
+@media (max-width: 500px) {
+    h1.portada-review-header {
+        font-size: 30px;
+    }
+
+    .portada-author {
+        font-size: 15px;
+    }
+
+    .portada-body {
+        font-size: 13px;
+        line-height: 1.5;
+    }
+
+    .portada-star {
+        font-size: 13px;
+    }
+
     .slick-next {
         right: 10%; 
     }
 
     .slick-prev {
         left: 6%; 
+    }
+}
+
+@media (max-width: 350px) {
+    .slick-next {
+        right: 8%; 
+    }
+
+    .slick-prev {
+        left: 3%; 
     }
 }

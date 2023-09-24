@@ -30,7 +30,7 @@ const ReviewsPortada: React.FC = () => {
     useEffect(() => {
         const updateSliderSettings = () => {
             if (window.innerWidth <= 425) {
-                setMaxLength(40);
+                setMaxLength(100);
             } else {
                 setMaxLength(150);
             }

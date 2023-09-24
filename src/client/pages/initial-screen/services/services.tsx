@@ -2,6 +2,7 @@ import React from "react";
 import CustomButton from "../../../components/CustomButton";
 import './style.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Link } from 'react-router-dom';
 import { faCheck, faWind, faTshirt } from '@fortawesome/free-solid-svg-icons';
 
 const ServicesPortada: React.FC = () => {
@@ -17,7 +18,9 @@ const ServicesPortada: React.FC = () => {
                         <br /><br />
                         <strong>Duct Clean Pro</strong>: Breathing Freshness into Your Life.
                     </p>
-                    <CustomButton text="View more" className="view-more-button-desktop" />
+                    <Link to={"/services"} style={{ textDecoration: 'none' }}>
+                        <CustomButton text="View more" className="view-more-button-desktop" />
+                    </Link>
                 </div>
                 <div className="service-cards-wrapper">
                     <div className="service-card">
@@ -60,7 +63,9 @@ const ServicesPortada: React.FC = () => {
                         </div>
                     </div>
                 </div>
-                <CustomButton text="View more" className="view-more-button-mobile" />
+                <Link to={"/services"} style={{ textDecoration: 'none' }}>
+                    <CustomButton text="View more" className="view-more-button-mobile" />
+                </Link>
             </div>
         </div>
     );

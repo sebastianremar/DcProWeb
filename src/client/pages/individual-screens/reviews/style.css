@@ -83,6 +83,7 @@
   color: #151515;
   line-height: 1.8; 
   text-align: left;
+  overflow-x: hidden;
 }
 
 .time-ago {
@@ -98,3 +99,28 @@
   padding-bottom: 20px;
 }
 
+@media (max-width: 1100px) {
+  .reviews-header {
+    padding-top: 50px;
+  }
+}
+
+@media (max-width: 800px) {
+  .reviews-header {
+    font-size: 50px; 
+  }
+
+  .reviews-container {
+    column-count: 2; 
+  }
+}
+
+@media (max-width: 500px) {
+  .reviews-header {
+    font-size: 40px; 
+  }
+
+  .reviews-container {
+    column-count: 1; 
+  }
+}

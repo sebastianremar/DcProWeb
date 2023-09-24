@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { Review } from "../../../../config";
 import './style.css';
 import ReviewCard from "./ReviewCard";
@@ -7,6 +7,12 @@ import CustomButton from '../../../components/CustomButton';
 
 const ReviewsIndividual: React.FC = () => {
   const reviews: Review[] = importedReviews;
+
+  const topElementRef = useRef<HTMLElement>(null);
+
+  useEffect(() => {
+    topElementRef.current?.scrollIntoView({ behavior: 'smooth' });
+  }, []);
 
   const [numToShow, setNumToShow] = useState(10);
 
@@ -17,10 +23,6 @@ const ReviewsIndividual: React.FC = () => {
       setNumToShow(reviews.length);
     }
   };
-
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
 
   return (
     <div className="reviews-section">

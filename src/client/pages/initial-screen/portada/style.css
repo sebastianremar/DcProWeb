@@ -2,12 +2,13 @@
 
 body, html {
     font-family: 'Montserrat', sans-serif;
+     overflow-x: hidden;
 }
 
 /* ------ PORTADA SECTION ------ */
 
 .portada {
-    background: url('../../../assets/images/portada.png') center/cover no-repeat;
+    background: url('../../../assets/images/IMG_6156.jpg') center/cover no-repeat;
     height: calc(100vh - 114px);
     width: 100%;
 }
@@ -17,8 +18,8 @@ body, html {
 .book-now-portada {
     position: absolute;
     width: 477px;
-    left: 60%;
-    top: 44%;
+    left: 99%;
+    top: 34%;
     background: #307FE2;
     border-radius: 21px;
     box-sizing: border-box;
@@ -27,6 +28,7 @@ body, html {
     align-items: center;
     justify-content: center;
     padding-top: 20px;
+    display: none;
 }
 
 .book-now-portada p {
@@ -62,41 +64,4 @@ body, html {
   
 .button-container-portada button:hover {
     background-color: #97D700;
-}
-
-@media (max-width: 1250px) {
-    .book-now-portada {
-        left: 60%; 
-        top: 64%; 
-        transform: translateX(-50%); 
-    }
-}
-
-@media (max-width: 1000px) {
-
-    .book-now-portada {
-        width: 350px;
-    }
-
-    .book-now-portada p {
-        font-size: 38px;
-        line-height: 44px;
-
-    }
-}
-
-@media (max-width: 500px) {
-    .book-now-portada {
-        top: 70%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 90%; 
-        background: rgba(48, 127, 226, 0.8); 
-        padding: 15px;
-    }
-
-    .book-now-portada p {
-        font-size: 38px;
-        line-height: 54px;
-    }
 }

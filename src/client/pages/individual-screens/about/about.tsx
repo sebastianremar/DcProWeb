@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './style.css';
 
-import image1 from '../../../assets/gallery/van_hd_1.png';
+import image1 from '../../../assets/images/IMG_6161-1.jpg';
 import image2 from '../../../assets/gallery/van_con_logo_chevere_hd.png';
 
 const About: React.FC = () => {

@@ -4,6 +4,7 @@ body, html {
     margin: 0;
     background-color: #f4f4f4; 
     box-sizing: border-box; 
+    overflow-x: hidden;
 }
 
 @keyframes slideIn {
@@ -225,7 +226,10 @@ body, html {
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 500px) {
+    .services-header {
+        font-size: 35px;
+    }
 
     .services-portada-container {
         flex-direction: column;
@@ -235,16 +239,23 @@ body, html {
     .service-card {
         flex: none; 
         width: 90%; 
-        max-width: 350px; 
+        max-width: 325px; 
         min-width: 100px; 
         box-sizing: border-box;
     }
+
+    .service-title {
+        font-size: 25px;
+    }
+
+    .description-text {
+        font-size: 15px;
+    }
 }
 
-@media (max-width: 401px) {
-    .services-header {
-        font-size: 40px;
+@media (max-width: 350px) {
+    .service-title {
+        font-size: 20px;
     }
-    
 }
 
