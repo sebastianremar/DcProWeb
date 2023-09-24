@@ -8,11 +8,10 @@ import CustomButton from '../../../components/CustomButton';
 const ReviewsIndividual: React.FC = () => {
   const reviews: Review[] = importedReviews;
 
-  const topElementRef = useRef<HTMLElement>(null);
-
   useEffect(() => {
-    topElementRef.current?.scrollIntoView({ behavior: 'smooth' });
-  }, []);
+    document.documentElement.scrollTop = 0;
+    document.body.scrollTop = 0;
+  }, [window.location.pathname]);
 
   const [numToShow, setNumToShow] = useState(10);
 

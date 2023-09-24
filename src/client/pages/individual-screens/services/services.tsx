@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import './style.css';
 
 import image1 from '../../../assets/images/IMG_6194.jpg';
@@ -6,6 +6,13 @@ import image2 from '../../../assets/gallery/van_hd_1.png';
 
 
 const Services: React.FC = () => {
+    const topElementRef = useRef<HTMLElement | null>(null);
+
+    useEffect(() => {
+        document.documentElement.scrollTop = 0;
+        document.body.scrollTop = 0;
+    }, [window.location.pathname]);
+
     return (
         <div className="services-section-individual">
             <section className="services-content-individual">
