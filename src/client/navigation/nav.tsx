@@ -1,26 +1,50 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { Link } from 'react-router-dom';
 import logo from '../assets/images/ductcleanlogo_2.png';
 import { BsFillTelephoneFill as PhoneIcon } from 'react-icons/bs';
-import CustomButton from "../components/CustomButton";
 import './style.css';
 
 const NavBar: React.FC = () => {
-  const [scrolled, setScrolled] = useState(false);
+  const [isNavOpen, setIsNavOpen] = useState(false);
+  const navRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (navRef.current && !navRef.current.contains(event.target as Node)) {
+        setIsNavOpen(false);
+      }
+    };
+  
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [navRef]);
+
+  const toggleNav = () => {
+    setIsNavOpen(!isNavOpen);
+  };
 
   return (
     <div className="navbar-container">
       <nav className="navbar">
-        <div className="left-container">
-          <div className="logo">
-            <img src={logo} alt="Logo" />
+      <div className="left-container" ref={navRef}>
+          <div className="hamburger" onClick={toggleNav}>
+            <span></span>
+            <span></span>
+            <span></span>
           </div>
-          <div className="nav-list">
+          <div className="logo">
+            <Link to="/">
+              <img src={logo} alt="Logo" />
+            </Link>
+          </div>
+          <div className={`nav-list ${isNavOpen ? 'open' : ''}`}>
             <ul>
-              <li><Link to="/about">About</Link></li>
-              <li><Link to="/services">Services</Link></li>
-              <li><Link to="/gallery">Gallery</Link></li>
-              <li><Link to="/reviews">Reviews</Link></li>
+              <li><Link to="/about" onClick={() => setIsNavOpen(false)}>About</Link></li>
+              <li><Link to="/services" onClick={() => setIsNavOpen(false)}>Services</Link></li>
+              <li><Link to="/gallery" onClick={() => setIsNavOpen(false)}>Gallery</Link></li>
+              <li><Link to="/reviews" onClick={() => setIsNavOpen(false)}>Reviews</Link></li>
             </ul>
           </div>
         </div>
@@ -38,9 +62,6 @@ const NavBar: React.FC = () => {
               </div>
             </div>
           </div>
-          {/* <div className="book-now-button">
-            <CustomButton text="Book Now"/>
-          </div> */}
         </div>
       </nav>
     </div>

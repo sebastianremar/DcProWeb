@@ -2,6 +2,7 @@
 body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
+  overflow-x: hidden;
 }
 
 /* Navbar container styles */
@@ -40,6 +41,7 @@ nav.navbar {
   align-items: center;
 }
 
+/* Logo styles */
 .logo {
   display: inline-block;
   z-index: 2;
@@ -54,12 +56,23 @@ nav.navbar {
   border-radius: 0px 0px 10px 10px;
 }
 
-/* Navbar list styles */
-.nav-list {
-  margin-left: 52px;
-  display: flex;
+/* Hamburger Icon Styles */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  margin-right: 20px;
 }
 
+.hamburger span {
+  background-color: #000;
+  height: 3px;
+  width: 25px;
+  margin: 2px 0;
+  transition: all 0.3s ease;
+}
+
+/* Navbar list styles */
 .nav-list ul {
   list-style: none;
   display: flex;
@@ -124,19 +137,124 @@ nav.navbar {
 }
 
 @media (max-width: 950px) {
+  .hamburger {
+    display: flex;
+  }
+
   .nav-list {
     display: none;
   }
-}
+  
+  .nav-list.open {
+    display: block; 
+    position: absolute;
+    top: 80px;
+    width: 150px;
+    left: 10px;
+    background: white;
+    text-align: left;
+    padding: 10px 0;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border-radius: 8px;
+  }
+  
+  .nav-list ul {
+    display: block; 
+    padding: 0;
+    margin: 0 auto; 
+  }
+  
+  .nav-list ul li {
+    display: block; 
+    margin: 10px 0; 
+    text-align: center; 
+    transition: background 0.3s, color 0.3s;
+  }
 
-@media (max-width: 430px) {
-  .left-container {
+  .nav-list ul li:hover {
+    background: #307FE2; 
+    color: #000; 
+  }
+
+  .left-container .logo {
     display: none;
   }
 
-  .right-container {
-    width: 100%;
-    justify-content: center;
+  .left-container {
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
+  }
+}
+
+
+@media (max-width: 400px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-list {
+    display: none;
+  }
+  
+  .nav-list.open {
+    display: block; 
+    position: absolute;
+    top: 80px;
+    width: 150px;
+    left: 10px;
+    background: white;
+    text-align: left;
+    padding: 10px 0;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border-radius: 8px;
+  }
+  
+  .nav-list ul {
+    display: block; 
+    padding: 0;
+    margin: 0 auto; 
+  }
+  
+  .nav-list ul li {
+    display: block; 
+    margin: 10px 0; 
+    text-align: center; 
+    transition: background 0.3s, color 0.3s;
+  }
+
+  .nav-list ul li:hover {
+    background: #307FE2; 
+    color: #000; 
+  }
+
+  .left-container .logo {
+    display: none;
+  }
+
+  .left-container {
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .phone-icon {
+    font-size: 33px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .phone-number, .book-now-letter {
+    font-weight: 800;
+    text-align: center;
+    color: #97D700;
+    font-size: 15px;
+  }
+  
+  .phone-number {
+    width: 100%;
+    font-size: 18px;
   }
 }
