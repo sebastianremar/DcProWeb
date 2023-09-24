@@ -13,10 +13,9 @@ I am hosting this web on an EC2 using amazon linux. I'm using this steps, build 
 
 ### On your local machine:
 
-docker build -t <docker-username>/image-name .
-docker push <docker-username>/image-name
+#### Requirements
+1 - have a docker account
+2 - ssh access to your server
+3 - root access on your server to run docker commands
 
-### On your server
-
-docker pull <docker-username>/image-name
-docker run -d -p 3000:80 --name <container-name> <docker-username>
+run `./deploy-image.sh`
