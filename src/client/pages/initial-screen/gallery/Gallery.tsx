@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import ImageGallery from 'react-image-gallery';
 import * as images from './index';
 import './style.css';
@@ -25,6 +25,11 @@ const GalleryInitial: React.FC = () => {
             thumbnail: images.aidaVarillas,
         },
     ];
+
+    useEffect(() => {
+        document.documentElement.scrollTop = 0;
+        document.body.scrollTop = 0;
+    }, [window.location.pathname]);
 
     return (
         <div className="component-container">

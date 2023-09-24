@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './style.css';
 
@@ -6,6 +6,12 @@ import image1 from '../../../assets/images/IMG_6161-1.jpg';
 import image2 from '../../../assets/gallery/van_con_logo_chevere_hd.png';
 
 const About: React.FC = () => {
+
+    useEffect(() => {
+        document.documentElement.scrollTop = 0;
+        document.body.scrollTop = 0;
+    }, [window.location.pathname]);
+
     return (
         <section className="about-section">
             <div className="flex-container">
