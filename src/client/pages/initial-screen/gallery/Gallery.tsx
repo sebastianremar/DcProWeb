@@ -1,17 +1,9 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import ImageGallery from 'react-image-gallery';
 import * as images from './index';
 import './style.css';
 const GalleryInitial: React.FC = () => {
     const imagesArray = [
-        {
-            original: images.vanConLogoChevereHD,
-            thumbnail: images.vanConLogoChevereHD,
-        },
-        {
-            original: images.vanHD1,
-            thumbnail: images.vanHD1,
-        },
         {
             original: images.aidaTaladro,
             thumbnail: images.aidaTaladro,
@@ -24,7 +16,49 @@ const GalleryInitial: React.FC = () => {
             original: images.aidaVarillas,
             thumbnail: images.aidaVarillas,
         },
+        {
+            original: images.vanConLogoChevereHD,
+            thumbnail: images.vanConLogoChevereHD,
+        },
+        {
+            original: images.vanHD1,
+            thumbnail: images.vanHD1,
+        },
+        {
+            original: images.antes,
+            thumbnail: images.antes,
+        },
+        {
+            original: images.despues,
+            thumbnail: images.despues,
+        },
+        {
+            original: images.empleados,
+            thumbnail: images.empleados,
+        },
+        {
+            original: images.rejilla,
+            thumbnail: images.rejilla,
+        },
+        {
+            original: images.poniendoRejilla,
+            thumbnail: images.poniendoRejilla,
+        },
+        {
+            original: images.cristianTaladro,
+            thumbnail: images.cristianTaladro,
+        }, 
+        {
+            original: images.escaleraSuppy,
+            thumbnail: images.escaleraSuppy,
+        },
+        {
+            original: images.lavandoRejilla,
+            thumbnail: images.lavandoRejilla,
+        }
     ];
+
+    const [isTouchDevice, setIsTouchDevice] = useState('ontouchstart' in window);
 
     useEffect(() => {
         document.documentElement.scrollTop = 0;
@@ -41,7 +75,7 @@ const GalleryInitial: React.FC = () => {
                     showFullscreenButton={false}
                     showPlayButton={false}
                     thumbnailPosition="bottom"
-                    showNav={false}
+                    showNav={!isTouchDevice}
                 />
             </div>
         </div>

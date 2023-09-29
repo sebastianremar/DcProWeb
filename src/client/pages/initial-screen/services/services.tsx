@@ -14,7 +14,7 @@ const ServicesPortada: React.FC = () => {
                     <p className="services-header-text">
                         Revitalize your space with Duct Clean Pro! 🌟
                         <br /><br />
-                        Don't let dirt dictate your air quality. Experience the professional difference as we sweep away the grime, leaving a breath of fresh air in your home or office. Say goodbye to allergens and hello to a cleaner, healthier living.
+                        If your Air ducts are dirty, the air you breathe in your home every time you use HVAC system, is most likely dirty too. Let's make sure your family is breathing fresh air by saying goodbye to allergens, grime, and say hello to a cleaner healthier living. 
                         <br /><br />
                         <strong>Duct Clean Pro</strong>: Breathing Freshness into Your Life.
                     </p>
@@ -33,7 +33,7 @@ const ServicesPortada: React.FC = () => {
                                 </div>
                                 <div className="info-line">
                                     <FontAwesomeIcon className="checkmark" icon={faCheck} color="#97D700" />
-                                    <span className="info-text">Detailed Cleaning Procedure</span>
+                                    <span className="info-text">Improve Air Quaility</span>
                                 </div>
                                 <div className="info-line">
                                     <FontAwesomeIcon className="checkmark" icon={faCheck} color="#97D700" />
@@ -52,7 +52,7 @@ const ServicesPortada: React.FC = () => {
                                 </div>
                                 <div className="info-line">
                                     <FontAwesomeIcon className="checkmark" icon={faCheck} color="#97D700" />
-                                    <span className="info-text">Improve Air Quaility</span>
+                                    <span className="info-text">Detailed Cleaning Procedure</span>
                                 </div>
                                 <div className="info-line">
                                     <FontAwesomeIcon className="checkmark" icon={faCheck} color="#97D700" />

@@ -118,7 +118,8 @@ nav.navbar {
   align-items: center;
 }
 
-.phone-number, .book-now-letter {
+.phone-number,
+.book-now-letter {
   font-weight: 800;
   text-align: center;
   color: #97D700;
@@ -135,17 +136,25 @@ nav.navbar {
   line-height: 30px;
 }
 
+.home-link {
+  display: none;
+}
+
 @media (max-width: 950px) {
   .hamburger {
     display: flex;
   }
 
+  .home-link {
+    display: block;
+  }
+
   .nav-list {
     display: none;
   }
-  
+
   .nav-list.open {
-    display: block; 
+    display: block;
     position: absolute;
     top: 80px;
     width: 150px;
@@ -153,26 +162,26 @@ nav.navbar {
     background: white;
     text-align: left;
     padding: 10px 0;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     border-radius: 8px;
   }
-  
+
   .nav-list ul {
-    display: block; 
+    display: block;
     padding: 0;
-    margin: 0 auto; 
+    margin: 0 auto;
   }
-  
+
   .nav-list ul li {
-    display: block; 
-    margin: 10px 0; 
-    text-align: center; 
+    display: block;
+    margin: 10px 0;
+    text-align: center;
     transition: background 0.3s, color 0.3s;
   }
 
   .nav-list ul li:hover {
-    background: #307FE2; 
-    color: #000; 
+    background: #307FE2;
+    color: #000;
   }
 
   .left-container .logo {
@@ -196,9 +205,13 @@ nav.navbar {
   .nav-list {
     display: none;
   }
-  
+
+  .home-link {
+    display: block;
+  }
+
   .nav-list.open {
-    display: block; 
+    display: block;
     position: absolute;
     top: 80px;
     width: 150px;
@@ -206,26 +219,26 @@ nav.navbar {
     background: white;
     text-align: left;
     padding: 10px 0;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     border-radius: 8px;
   }
-  
+
   .nav-list ul {
-    display: block; 
+    display: block;
     padding: 0;
-    margin: 0 auto; 
+    margin: 0 auto;
   }
-  
+
   .nav-list ul li {
-    display: block; 
-    margin: 10px 0; 
-    text-align: center; 
+    display: block;
+    margin: 10px 0;
+    text-align: center;
     transition: background 0.3s, color 0.3s;
   }
 
   .nav-list ul li:hover {
-    background: #307FE2; 
-    color: #000; 
+    background: #307FE2;
+    color: #000;
   }
 
   .left-container .logo {
@@ -244,14 +257,15 @@ nav.navbar {
     display: flex;
     align-items: center;
   }
-  
-  .phone-number, .book-now-letter {
+
+  .phone-number,
+  .book-now-letter {
     font-weight: 800;
     text-align: center;
     color: #97D700;
     font-size: 15px;
   }
-  
+
   .phone-number {
     width: 100%;
     font-size: 18px;

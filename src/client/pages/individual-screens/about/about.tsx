@@ -2,8 +2,8 @@ import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './style.css';
 
-import image1 from '../../../assets/images/IMG_6161-1.jpg';
-import image2 from '../../../assets/gallery/van_con_logo_chevere_hd_resize_compressed.png';
+import image1 from '../../../assets/images/papa_van.jpg';
+import image2 from '../../../assets/images/IMG_6161-1.jpg';
 
 const About: React.FC = () => {
 
@@ -16,7 +16,7 @@ const About: React.FC = () => {
         <section className="about-section">
             <div className="flex-container">
                 <div className="flex-text">
-                    <h1>About Duct Clean Pro</h1>
+                    <h1>Our History</h1>
                     <p>
                         Duct Clean Pro has over 13 years of vent cleaning experience. Our business is located in McLean, VA, but we serve many areas in Maryland, Virginia, and Washington, DC. More than 7,000 systems have been cleaned in homes, apartments, workplaces, restaurants, and fire stations, assuring our clients increased system efficiency, better health, and more comfortable living and working environments.
                     </p>
@@ -31,7 +31,6 @@ const About: React.FC = () => {
 
             <div className="flex-container-reverse">
                 <div className="flex-text">
-                    <h1>Our History</h1>
                     <p>
                         We are a Family owned business that started in 2009. In 2014 we got certified by the "National Air Duct Cleaners Association" (NADCA) which means we follow their strict guidelines for air duct cleaning. Our attention to detail and dedication separates our work from the competition. We treat your homes as if they were ours, which gives peace of mind to all our clients and assures that their ducts will end up spotless. We have the experience and the equipment to offer you the Best Service in the area for the best price. Available services:
                     </p>

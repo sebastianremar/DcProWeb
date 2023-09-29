@@ -41,6 +41,7 @@ const NavBar: React.FC = () => {
           </div>
           <div className={`nav-list ${isNavOpen ? 'open' : ''}`}>
             <ul>
+              <li className="home-link"><Link to="/" onClick={() => setIsNavOpen(false)}>Home</Link></li>
               <li><Link to="/about" onClick={() => setIsNavOpen(false)}>About</Link></li>
               <li><Link to="/services" onClick={() => setIsNavOpen(false)}>Services</Link></li>
               <li><Link to="/gallery" onClick={() => setIsNavOpen(false)}>Gallery</Link></li>
