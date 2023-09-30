@@ -75,6 +75,35 @@
     .image-gallery-right-nav .image-gallery-icon {
         display: block;
     }
+
+    .image-gallery-icon::before {
+        font-size: 1.5em; 
+    }
+}
+
+@media (max-width: 1000px) {
+    .image-gallery-left-nav .image-gallery-icon,
+    .image-gallery-right-nav .image-gallery-icon {
+        display: block;
+    }
+
+    .image-gallery-icon::before {
+        font-size: 1.5em; 
+    }
+
+    .image-gallery-image {
+        max-width: 50%; 
+        max-height: 50vh; 
+        border-radius: 12px; 
+    }
+}
+
+@media (max-width: 750px) {
+    .image-gallery-image {
+        max-width: 40%; 
+        max-height: 40vh; 
+        border-radius: 12px; 
+    }
 }
 
 @media (max-width: 500px) {
@@ -84,5 +113,9 @@
 
     .gallery-title {
         font-size: 35px;
+    }
+
+    .image-gallery-icon::before {
+        font-size: 1em; 
     }
 }
