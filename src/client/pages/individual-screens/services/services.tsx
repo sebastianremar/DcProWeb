@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from "react";
 import './style.css';
 
 import image1 from '../../../assets/images/IMG_6194.jpg';
-import image2 from '../../../assets/gallery/van_hd_1_resize_compressed.png';
+import image2 from '../../../assets/images/IMG_6910.jpg';
 
 
 const Services: React.FC = () => {
