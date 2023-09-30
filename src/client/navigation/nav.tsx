@@ -14,7 +14,7 @@ const NavBar: React.FC = () => {
         setIsNavOpen(false);
       }
     };
-  
+
     document.addEventListener("mousedown", handleClickOutside);
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
@@ -28,7 +28,7 @@ const NavBar: React.FC = () => {
   return (
     <div className="navbar-container">
       <nav className="navbar">
-      <div className="left-container" ref={navRef}>
+        <div className="left-container" ref={navRef}>
           <div className="hamburger" onClick={toggleNav}>
             <span></span>
             <span></span>
@@ -54,14 +54,16 @@ const NavBar: React.FC = () => {
             <div className="phone-icon">
               <PhoneIcon />
             </div>
-            <div className="book-number-letter-container">
-              <div className="phone-number">
-                (703)-296-1979
+            <a href="tel:7032961979" style={{ textDecoration: 'none', color: 'inherit', display: 'block', cursor: 'pointer' }}>
+              <div className="book-number-letter-container">
+                <div className="phone-number">
+                  (703)-296-1979
+                </div>
+                <div className="book-now-letter">
+                  CALL NOW
+                </div>
               </div>
-              <div className="book-now-letter">
-                CALL NOW
-              </div>
-            </div>
+            </a>
           </div>
         </div>
       </nav>

@@ -130,6 +130,11 @@ nav.navbar {
   font-size: 23px;
 }
 
+.right-container .book-by-phone-container .book-number-letter-container .phone-number a {
+  text-decoration: none;
+  color: #97D700;
+}
+
 .book-now-letter {
   width: 150px;
   font-size: 15px;
@@ -258,6 +263,13 @@ nav.navbar {
     align-items: center;
   }
 
+  .phone-link {
+    display: block; 
+    cursor: pointer;
+    z-index: 1000; 
+    position: relative; 
+  }
+
   .phone-number,
   .book-now-letter {
     font-weight: 800;
@@ -267,6 +279,7 @@ nav.navbar {
   }
 
   .phone-number {
+    text-decoration: none;
     width: 100%;
     font-size: 18px;
   }
