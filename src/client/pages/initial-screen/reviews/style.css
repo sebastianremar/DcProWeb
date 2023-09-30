@@ -2,7 +2,7 @@
 .portada-reviews-homepage-container {
     padding: 92px 15px 92px 15px;
     position: relative;
-    background: url(/Users/sebasremar/VscodeProjects/DcProWeb/dcproweb/src/client/assets/images/papa_van.jpg) center/cover no-repeat;
+    background: url(../../../assets/images/papa_van.jpg) center/cover no-repeat;
     background-color: #151515;
 }
 
