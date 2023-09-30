@@ -81,6 +81,17 @@
     }
 }
 
+@media (max-width: 1400px) {
+    .image-gallery-left-nav {
+        left: 14%; 
+    }
+
+    .image-gallery-right-nav {
+        right: 14%; 
+    }
+}
+
+
 @media (max-width: 1000px) {
     .image-gallery-left-nav .image-gallery-icon,
     .image-gallery-right-nav .image-gallery-icon {
@@ -96,6 +107,14 @@
         max-height: 50vh; 
         border-radius: 12px; 
     }
+
+    .image-gallery-left-nav {
+        left: 20%; 
+    }
+
+    .image-gallery-right-nav {
+        right: 20%; 
+    }
 }
 
 @media (max-width: 750px) {
@@ -103,6 +122,14 @@
         max-width: 40%; 
         max-height: 40vh; 
         border-radius: 12px; 
+    }
+
+    .image-gallery-left-nav {
+        left: 25%; 
+    }
+
+    .image-gallery-right-nav {
+        right: 25%; 
     }
 }
 
