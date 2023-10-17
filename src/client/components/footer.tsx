@@ -18,7 +18,9 @@ const Footer: React.FC = () => {
             </div>
             <div className="footer-column">
                 <h2>NADCA CERTIFIED</h2>
-                <img src={nadcaLogo} alt="Nadca Certification Logo" className="nadca-logo"/>
+                <a href="https://nadca.com/find-a-professional/duct-clean-pro" target="_blank" rel="noopener noreferrer" className="nadca-logo-link">
+                    <img src={nadcaLogo} alt="Nadca Certification Logo" className="nadca-logo"/>
+                </a>
                 <h2>Contact Us</h2>
                 <ul>
                     <li><FaPhoneAlt />  (703) - 296 - 1979</li>
