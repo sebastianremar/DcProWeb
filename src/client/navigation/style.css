@@ -147,7 +147,7 @@ nav.navbar {
 
 /* NADGA LOGO */
 .nadca-logo {
-  max-width: 150px; 
+  max-width: 150px;
   max-height: 80px;
   margin-bottom: 10px;
   margin-top: 10px;
@@ -166,7 +166,7 @@ nav.navbar {
   font-weight: 600;
   text-align: center;
   color: #97D700;
-  display: none; 
+  display: none;
   font-size: 18px;
   margin-top: 5px;
 }
@@ -220,7 +220,7 @@ nav.navbar {
   }
 
   .duct-clean-pro-text {
-    display: block; 
+    display: block;
   }
 
   .left-container {
@@ -231,7 +231,7 @@ nav.navbar {
   }
 
   .nadca-logo {
-    max-width: 125px; 
+    max-width: 125px;
     max-height: 70px;
     margin-bottom: 10px;
     margin-top: 10px;
@@ -239,9 +239,16 @@ nav.navbar {
     cursor: pointer;
   }
 }
+
 @media (max-width: 430px) {
+  .book-by-phone-container {
+    width: auto; 
+    justify-content: space-between; 
+    margin-left: 10px;
+  }
+
   .nadca-logo {
-    max-width: 100px; 
+    max-width: 100px;
     max-height: 50px;
     margin-bottom: 10px;
     margin-top: 10px;
@@ -256,10 +263,10 @@ nav.navbar {
   }
 
   .phone-link {
-    display: block; 
+    display: block;
     cursor: pointer;
-    z-index: 1000; 
-    position: relative; 
+    z-index: 1000;
+    position: relative;
   }
 
   .phone-number,
@@ -280,6 +287,10 @@ nav.navbar {
     font-size: 15px;
   }
 
+  .phone-icon,
+  .book-now-letter {
+    display: none;
+  }
 }
 
 @media (max-width: 400px) {
