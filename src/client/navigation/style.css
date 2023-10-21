@@ -161,6 +161,16 @@ nav.navbar {
   margin-left: 10px;
 }
 
+/* Duct Clean Pro only when logo is hidden */
+.duct-clean-pro-text {
+  font-weight: 600;
+  text-align: center;
+  color: #97D700;
+  display: none; 
+  font-size: 18px;
+  margin-top: 5px;
+}
+
 @media (max-width: 950px) {
   .hamburger {
     display: flex;
@@ -209,6 +219,10 @@ nav.navbar {
     display: none;
   }
 
+  .duct-clean-pro-text {
+    display: block; 
+  }
+
   .left-container {
     flex-grow: 1;
     display: flex;
@@ -225,7 +239,48 @@ nav.navbar {
     cursor: pointer;
   }
 }
+@media (max-width: 430px) {
+  .nadca-logo {
+    max-width: 100px; 
+    max-height: 50px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    vertical-align: middle;
+    cursor: pointer;
+  }
 
+  .phone-icon {
+    font-size: 28px;
+    display: flex;
+    align-items: center;
+  }
+
+  .phone-link {
+    display: block; 
+    cursor: pointer;
+    z-index: 1000; 
+    position: relative; 
+  }
+
+  .phone-number,
+  .book-now-letter {
+    font-weight: 800;
+    text-align: center;
+    color: #97D700;
+    font-size: 12px;
+  }
+
+  .phone-number {
+    text-decoration: none;
+    width: 100%;
+    font-size: 15px;
+  }
+
+  .duct-clean-pro-text {
+    font-size: 15px;
+  }
+
+}
 
 @media (max-width: 400px) {
   .hamburger {
@@ -280,41 +335,5 @@ nav.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
-
-  .phone-icon {
-    font-size: 33px;
-    display: flex;
-    align-items: center;
-  }
-
-  .phone-link {
-    display: block; 
-    cursor: pointer;
-    z-index: 1000; 
-    position: relative; 
-  }
-
-  .phone-number,
-  .book-now-letter {
-    font-weight: 800;
-    text-align: center;
-    color: #97D700;
-    font-size: 15px;
-  }
-
-  .phone-number {
-    text-decoration: none;
-    width: 100%;
-    font-size: 18px;
-  }
-
-  .nadca-logo {
-    max-width: 100px; 
-    max-height: 50px;
-    margin-bottom: 10px;
-    margin-top: 10px;
-    vertical-align: middle;
-    cursor: pointer;
   }
 }

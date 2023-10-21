@@ -66,6 +66,7 @@ const NavBar: React.FC = () => {
                 <div className="book-now-letter">
                   CALL NOW
                 </div>
+                <div className="duct-clean-pro-text">DUCT CLEAN PRO</div>
               </div>
             </a>
           </div>
