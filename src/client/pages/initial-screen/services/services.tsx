@@ -12,7 +12,7 @@ const ServicesPortada: React.FC = () => {
                 <div className="service-cards-desc">
                     <h2 className="services-header">Our Services</h2>
                     <p className="services-header-text">
-                        Revitalize your space with Duct Clean Pro! 🌟
+                        Revitalize your space with Duct Clean Pro! 🌟🌟🌟
                         <br /><br />
                         If your Air ducts are dirty, the air you breathe in your home every time you use your HVAC system, is most likely dirty too. Let's make sure your family is breathing fresh air by saying goodbye to allergens, grime, and say hello to a cleaner healthier living. 
                         <br /><br />
