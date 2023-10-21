@@ -18,7 +18,7 @@ const About: React.FC = () => {
                 <div className="flex-text">
                     <h1>Our History</h1>
                     <p>
-                        Duct Clean Pro has over 13 years of vent cleaning experience. Our business is located in McLean, VA, but we serve many areas in Maryland, Virginia, and Washington, DC. More than 7,000 systems have been cleaned in homes, apartments, workplaces, restaurants, and fire stations, assuring our clients increased system efficiency, better health, and more comfortable living and working environments.
+                        Duct Clean Pro has over 14 years of vent cleaning experience. Our business is located in McLean, VA, but we serve many areas in Maryland, Virginia, and Washington, DC. More than 9,000 systems have been cleaned in homes, apartments, workplaces, restaurants, and fire stations, assuring our clients increased system efficiency, better health, and more comfortable living and working environments.
                     </p>
                     <p>
                         We are committed to providing the best service possible to our clients, and we adhere to the rules set forth by the National Air Duct Cleaners Association. Our small business offers superior-quality service at reasonable rates. We present our clients with before and after images to demonstrate our exceptional work and ensure their satisfaction. Seeing our clients happy is rewarding; thus, we will continue to do an excellent job throughout our service areas.
