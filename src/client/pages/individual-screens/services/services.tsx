@@ -19,7 +19,7 @@ const Services: React.FC = () => {
                 <div className="services-flex-container-individual">
                     <div className="services-flex-text-individual">
                         <h1>Air Duct Cleaning</h1>
-                        <p>At Duct Clean Pro, we offer premium air duct cleaning services in DMV area. Our team utilizes advanced techniques to ensure comprehensive cleaning and improved air quality.</p>
+                        <p>At Duct Clean Pro, we offer premium air duct cleaning services in the DMV area. Our team utilizes advanced techniques to ensure comprehensive cleaning and improved air quality.</p>
                         <p>We understand the importance of maintaining a healthy living environment, which is why our services are essential for homes with family members with allergies, respiratory issues, pets and homes that have recently undergone construction. Choose Duct Clean Pro and breathe the difference today!</p>
                     </div>
                     <div className="services-flex-image-individual">

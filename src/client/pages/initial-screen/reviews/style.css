@@ -159,7 +159,7 @@ h1.portada-review-header {
 .button-container-review a {
     text-decoration: none; 
     display: inline-block; 
-    z-index: 3;
+    z-index: 1;
 }
 
 .button-container-review button {

@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import { Link } from 'react-router-dom';
 import logo from '../assets/images/ductcleanlogo_2.png';
 import { BsFillTelephoneFill as PhoneIcon } from 'react-icons/bs';
+import nadcaLogo from '../assets/images/nadca-logo.png';
 import './style.css';
 
 const NavBar: React.FC = () => {
@@ -50,6 +51,9 @@ const NavBar: React.FC = () => {
           </div>
         </div>
         <div className="right-container">
+          <a href="https://nadca.com/find-a-professional/duct-clean-pro" target="_blank" rel="noopener noreferrer" className="nadca-logo-link">
+            <img src={nadcaLogo} alt="Nadca Certification Logo" className="nadca-logo" />
+          </a>
           <div className="book-by-phone-container">
             <div className="phone-icon">
               <PhoneIcon />

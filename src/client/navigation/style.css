@@ -145,6 +145,22 @@ nav.navbar {
   display: none;
 }
 
+/* NADGA LOGO */
+.nadca-logo {
+  max-width: 150px; 
+  max-height: 80px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.nadca-logo-link:hover .nadca-logo {
+  transform: rotate(10deg);
+  transition: transform 0.3s ease-in-out;
+  margin-left: 10px;
+}
+
 @media (max-width: 950px) {
   .hamburger {
     display: flex;
@@ -198,6 +214,15 @@ nav.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+
+  .nadca-logo {
+    max-width: 125px; 
+    max-height: 70px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    vertical-align: middle;
+    cursor: pointer;
   }
 }
 
@@ -282,5 +307,14 @@ nav.navbar {
     text-decoration: none;
     width: 100%;
     font-size: 18px;
+  }
+
+  .nadca-logo {
+    max-width: 100px; 
+    max-height: 50px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    vertical-align: middle;
+    cursor: pointer;
   }
 }
